@@ -3,4 +3,51 @@ layout: framework
 banner: 'default'
 ---
 
+<style>
+
+  .people {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0 0;
+    display:  grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 0.5rem;
+  }
+
+  .people li {
+    /*font-size:  1.2rem;*/
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .people {
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+
+</style>
+
+<section id="about">
+
+  <h2>About Us</h2>
+
+  <p>In faucibus semper iaculis. Vestibulum tempor tempor leo, at sollicitudin mauris. Cras neque ante, fringilla quis nunc a, vehicula dignissim tellus. Nullam gravida lorem in <a href="#">metus pretium</a>, in tristique justo imperdiet. Pellentesque et neque nulla. Etiam convallis, urna at tincidunt euismod, justo libero bibendum ligula, vitae pellentesque erat quam sit amet odio. Nulla vel vestibulum est.</p>
+
+  <p>Nam vel dolor felis. Proin lacinia, odio nec euismod dictum, odio sem auctor tellus, sit amet commodo leo libero a justo. Fusce auctor luctus velit quis posuere. Sed sagittis posuere lectus, <strong>sit amet hendrerit</strong> urna aliquet eget. Vivamus sed diam a felis vestibulum lacinia sed quis massa. Nullam ante quam, consequat vel lacus sed, volutpat eleifend dui. Praesent viverra libero tellus, a consequat orci scelerisque id. Fusce pharetra ornare enim et scelerisque. Donec sed facilisis velit.</p>
+
+  <ul class="people">
+
+    <li><i class="fa fa-fw fa-bolt"></i> Ben</li>
+    <li><i class="fa fa-fw fa-car"></i> David</li>
+    <li><i class="fa fa-fw fa-headphones"></i> Dom</li>
+    <li><i class="fa fa-fw fa-book"></i> Grey</li>
+    <li><i class="fa fa-fw fa-rocket"></i> Izzy</li>
+    <li><i class="fa fa-fw fa-leaf"></i> Madi</li>
+    <li><i class="fa fa-fw fa-music"></i> Majd</li>
+    <li><i class="fa fa-fw fa-bug"></i> Rose</li>
+
+  </ul>
+
+</section>
 
