@@ -1,0 +1,16 @@
+whenworks:
+  published: true
+  name: WhenWorks
+  screenshot: /assets/whenworks.jpeg
+  icon: /assets/whenworks-icon.webp
+  subtitle: Meet without the back and forth.
+  app_store: https://itunes.apple.com/app/id1356360346?mt=8
+  website: https://whenworks.app
+fluidics:
+  published: false
+  name: Fluidics
+  screenshot: /assets/fluidics.png
+  icon: /assets/fluidics-icon.webp
+  subtitle: Easy, simple water tracking.
+  app_store: https://itunes.apple.com/app/id1330261345?mt=8
+  website: https://fluidics.app
