@@ -1,15 +1,10 @@
-ben:
-  name: Ben
+- name: Ben
   icon: fa-bolt
-david:
-  name: David
+- name: David
   icon: fa-car
-dom:
-  name: Dom
+- name: Dom
   icon: fa-headphones
-majd:
-  name: Majd
+- name: Majd
   icon: fa-music
-rose:
-  name: Rosemary
-  icon: fa-cookie
+- name: Rosemary
+  icon: fa-bug
