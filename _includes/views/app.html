@@ -1,0 +1,27 @@
+<section id="apps">
+
+  <h2>Our Apps</h2>
+
+  <div class="app-grid">
+{% for app in site.data.apps %}
+  {% if app.published %}
+  <div class="app">
+      <img class="screenshot" src="{{ app.screenshot }}" alt="{{ app.name }} App">
+
+      <div class="name">
+        <img class="icon" src="{{ app.icon }}" alt="{{ app.name }} App Icon">
+        <h3>{{ app.name }}</h3>
+      </div>
+
+      <p>{{ app.subtitle }}</p>
+
+      <div class="buttons">
+        <a href="{{ app.app_store }}"><img src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download WhenWorks on the App Store"></a>
+        <a href="{{ app.website }}" class="button">Learn more ›</a>
+      </div>
+  </div>
+  {% endif %}
+{% endfor %}  
+    </div>
+
+</section>
