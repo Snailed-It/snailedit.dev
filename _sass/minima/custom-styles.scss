@@ -16,6 +16,15 @@
   }
 }
 
+.title-text {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.625rem;
+  @include media-query($on-palm) {
+    font-size: 5vw;
+  }
+}
+
 .feature-content {
   .container {
     margin: 10px auto;
