@@ -1,100 +1,65 @@
 ---
-layout: framework
-banner: 'default'
+layout: default
+exclude: true
 ---
 
-<style>
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  {%- if page.subtitle -%}
+    <h2>{{ page.subtitle }}</h2>
+  {%- endif -%}
 
-  .page-content {
-    padding-top: 30px;
-  }
-
-  .people {
-    list-style: none;
-    padding: 0;
-    margin: 30px 0 0 0;
-    display:  grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 0.5rem;
-    grid-column-gap: 0.5rem;
-  }
-
-  .people li {
-    /*font-size:  1.2rem;*/
-    text-align: center;
-  }
-
-  #apps {
-    margin-bottom: 30px;
-  }
-
-  .app-grid {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-  }
-
-  .app img.screenshot {
-    margin-bottom: 30px;
-  }
-
-  .app .name {
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-column-gap: 10px;
-  }
-
-  .app .name img.icon {
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .app .name h3 {
-    line-height: 50px;
-    font-size: 1.5em;
-  }
-
-  .app .buttons img {
-    margin-right: 10px;
-  }
-
-  .app .note {
-    margin-top: 10px;
-    opacity: 0.7;
-  }
-
-  @media only screen and (min-width: 600px) {
-    .people {
-      grid-template-columns: repeat(8, 1fr);
-    }
-    .app-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+  {{ content }}
 
 
+  {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
 
-</style>
 
-{% include app.html %}
+  {%- if posts.size > 0 -%}
+    {%- if page.list_title -%}
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- endif -%}
+    <ul class="post-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in posts -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
 
-<section id="about">
+    {% if site.paginate %}
+      <div class="pager">
+        <ul class="pagination">
+        {%- if paginator.previous_page %}
+          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
+        {%- else %}
+          <li><div class="pager-edge">•</div></li>
+        {%- endif %}
+          <li><div class="current-page">{{ paginator.page }}</div></li>
+        {%- if paginator.next_page %}
+          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+        {%- else %}
+          <li><div class="pager-edge">•</div></li>
+        {%- endif %}
+        </ul>
+      </div>
+    {%- endif %}
 
-  <h2>About Us</h2>
+  {%- endif -%}
 
-  <p>Snailed It is an independent development company formed by a group of friends from across the globe.  Spanning three countries and five timezones, we came together to make software that we want to see and use in the world, working to provide solutions that help people in their day-to-day lives.  At Snailed It, we believe that software doesn’t work unless it is both powerful and well-designed, so we aim to make products that our users enjoy using.</p>
-
-  <ul class="people">
-
-    {% for person in site.data.people %}
-      <li><i class="fa fa-fw {{ person.icon }}"></i> {{ person.name }}</li>
-    {% endfor %}
-
-  </ul>
-
-</section>
-
+</div>
