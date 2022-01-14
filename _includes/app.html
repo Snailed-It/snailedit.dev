@@ -2,8 +2,8 @@
 
   <h2>Our Apps</h2>
   <div class="app-grid">
+{% assign apps = site.data.apps | where: "published", true }
 {% for app in site.data.apps %}
-  {% if app.published %}
   <div class="app">
       <img class="screenshot" src="{{ app.screenshot }}" alt="{{ app.name }} App">
 
@@ -19,7 +19,6 @@
         <a href="{{ app.website }}" class="button">Learn more ›</a>
       </div>
   </div>
-  {% endif %}
 {% endfor %}  
     </div>
 
