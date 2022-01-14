@@ -1,0 +1,134 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+.page-content {
+    padding-top: $nav-bar-height;
+    background-image: linear-gradient(to bottom, $lm-brand-color $nav-bar-height, $background-color 15%);
+    @media (prefers-color-scheme:dark) {
+        background-image: linear-gradient(to bottom, $dm-brand-color $nav-bar-height, $background-color 15%);
+    }
+  }
+
+  .gradient-background {
+    background-image: linear-gradient(to bottom, $lm-brand-color $nav-bar-height, $background-color 100%);
+    @media (prefers-color-scheme:dark) {
+        background-image: linear-gradient(to bottom, $dm-brand-color $nav-bar-height, $background-color 100%);
+    }
+  }
+
+  .feature-content {
+    .container{
+      margin: 10px auto;
+      max-width: 600px;
+      text-align: center;
+      h1 {
+        margin: 10px 0 30px 0;
+        font-size: 4em;
+        line-height: 1;
+        letter-spacing: -1px;
+      }
+    }
+  }
+
+  .vertical-padding {
+    padding-top: 5em;
+  }
+
+  .people-list {
+      width: 100%;
+      display: inline-block;
+  }
+
+  .people {
+    width: 90%;
+    list-style: none;
+    padding: 1em;
+    margin: 30px 0 0 0;
+    display:  inline-grid;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 0.5rem;
+  }
+
+  .people li {
+    text-align: center;
+  }
+
+  #apps {
+    margin-bottom: 30px;
+  }
+
+  .app-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+
+  .app img.screenshot {
+    margin-bottom: 30px;
+  }
+
+  .app .name {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: 10px;
+  }
+
+  .app .name img.icon {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .app .name h3 {
+    line-height: 50px;
+    font-size: 1.5em;
+  }
+
+  .app .buttons img {
+    margin-right: 10px;
+  }
+
+  .app .note {
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .people {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .app-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .site-header {
+    border-top: 0px;
+    border-bottom: 0px;
+    background-color: $lm-brand-color;
+    @media (prefers-color-scheme:dark) {
+        background-color: $dm-brand-color !important;
+    }
+    max-height: $nav-bar-height;
+    min-height: $nav-bar-height;
+
+    .site-title,
+    .page-link,
+    a {
+        color: black;
+        &:hover {
+            text-decoration: none;
+        }
+        @media (prefers-color-scheme:dark) {
+            color: white;
+        }
+    }
+  
+    // Positioning context for the mobile navigation icon
+    position: fixed;
+    top: 0; 
+    width: 100%;
+  }
