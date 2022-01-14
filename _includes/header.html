@@ -5,7 +5,11 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}      
     
-    </a><a class="site-title" rel="author" href="{{ "/" | relative_url }}"><object data="{{ '/assets/snail.svg' | relative_url }}" style="width: 50px; height: 20px" type="image/svg+xml"></object>&nbsp;{{ site.title | escape }}</a>
+    </a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      <object data="{{ '/assets/snail.svg' | relative_url }}" style="width: 50px; height: 20px" type="image/svg+xml"></object>
+      <span class="title-text">&nbsp;{{ site.title | escape }}</span>
+    </a>
 
     {%- if titles_size > 0 -%}
       <nav class="site-nav">
