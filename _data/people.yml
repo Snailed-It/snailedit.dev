@@ -1,10 +1,6 @@
-- name: Ben
-  icon: fa-bolt
 - name: David
   icon: fa-car
 - name: Dom
   icon: fa-headphones
-- name: Majd
-  icon: fa-music
 - name: Rosemary
   icon: fa-bug
