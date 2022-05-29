@@ -1,14 +1,21 @@
 - name: WhenWorks
   published: true
-  screenshot: /assets/whenworks.png
-  icon: /assets/whenworks-icon.webp
+  screenshot: /assets/apps/whenworks/screenshot.png
+  icon: /assets/apps/whenworks/icon.webp
   subtitle: Meet without the back and forth.
   app_store: https://itunes.apple.com/app/id1356360346?mt=8
   website: https://whenworks.app
-- name: Fluidics
+- name: Capsule
   published: false
-  screenshot: /assets/fluidics.png
-  icon: /assets/fluidics-icon.webp
-  subtitle: Easy, simple water tracking.
-  app_store: https://itunes.apple.com/app/id1330261345?mt=8
-  website: https://fluidics.app
+  screenshot: /assets/apps/capsule/screenshot.png
+  icon: /assets/icon.png
+  subtitle: Keep track of your vitamins and medication.
+  app_store: TKTK
+  website: TKTK
+- name: FocusCuts
+  published: false
+  screenshot: /assets/apps/focuscuts/screenshot.png
+  icon: /assets/apps/focuscuts/icon.png
+  subtitle: A macOS app which provides Shortcuts actions to get your current Focus mode, and lets you choose 
+  app_store: 
+  website: https://focuscuts.com
