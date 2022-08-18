@@ -33,25 +33,6 @@
   padding-top: 5em;
 }
 
-.people-list {
-  width: 100%;
-  display: inline-block;
-}
-
-.people {
-  width: 90%;
-  list-style: none;
-  padding: 1em;
-  margin: 30px 0 0 0;
-  display: inline-grid;
-  grid-row-gap: 0.5rem;
-  grid-column-gap: 0.5rem;
-}
-
-.people li {
-  text-align: center;
-}
-
 section:not(:last-of-type) {
   margin-bottom: 30px;
 }
