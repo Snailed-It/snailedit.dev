@@ -63,7 +63,7 @@
   text-align: center;
 }
 
-#apps {
+section:not(:last-of-type) {
   margin-bottom: 30px;
 }
 
