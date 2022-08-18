@@ -3,17 +3,6 @@
 
 .page-content {
   padding-top: $nav-bar-height;
-  background-image: linear-gradient(to bottom, $lm-brand-color $nav-bar-height, $background-color 15%);
-  @media (prefers-color-scheme: dark) {
-    background-image: linear-gradient(to bottom, $dm-brand-color $nav-bar-height, $background-color 15%);
-  }
-}
-
-.gradient-background {
-  background-image: linear-gradient(to bottom, $lm-brand-color $nav-bar-height, $background-color 100%);
-  @media (prefers-color-scheme: dark) {
-    background-image: linear-gradient(to bottom, $dm-brand-color $nav-bar-height, $background-color 100%);
-  }
 }
 
 .title-text {
