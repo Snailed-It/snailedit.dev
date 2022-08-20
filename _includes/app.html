@@ -1,25 +1,27 @@
 <section id="apps">
 
-  <h2>Our Apps</h2>
-  <div class="app-grid">
-{% assign apps = site.data.apps | where: "published", true %}
-{% for app in apps %}
-      <div class="app">
-          <img class="screenshot" src="{{ app.screenshot }}" alt="{{ app.name }} App">
+    <h2>Our Apps</h2>
+    <div class="app-grid">
+        {% assign apps = site.data.apps | where: "published", true %}
+        {% for app in apps %}
+        <div class="app">
+            <img alt="{{ app.name }} App" class="screenshot" src="{{ app.screenshot }}">
 
-          <div class="name">
-            <img class="icon" src="{{ app.icon }}" alt="{{ app.name }} App Icon">
-            <h3>{{ app.name }}</h3>
-          </div>
+            <div class="name">
+                <img alt="{{ app.name }} App Icon" class="icon" src="{{ app.icon }}">
+                <h3>{{ app.name }}</h3>
+            </div>
 
-          <p>{{ app.subtitle }}</p>
+            <p>{{ app.subtitle }}</p>
 
-          <div class="buttons">
-            <a href="{{ app.app_store }}"><img src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download WhenWorks on the App Store"></a>
-            <a href="{{ app.website }}" class="button">Learn more ›</a>
-          </div>
-      </div>
-{% endfor %}  
+            <div class="buttons">
+                <a href="{{ app.app_store }}"><img
+                        alt="Download {{ app.name }} on the App Store"
+                        src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"></a>
+                <a class="button" href="{{ app.website }}">Learn more ›</a>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 
 </section>
