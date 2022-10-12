@@ -13,7 +13,7 @@
   app_store: https://itunes.apple.com/app/id1450936447
   website: https://pushcut.io
 - name: FocusCuts
-  published: false
+  published: true
   screenshot: /assets/apps/focuscuts/screenshot.png
   icon: /assets/apps/focuscuts/icon.png
   subtitle: A macOS app which provides Shortcuts actions to get your current Focus mode, and lets you choose 
