@@ -7,8 +7,8 @@
   website: https://whenworks.app
 - name: Pushcut
   published: true
-  screenshot: /assets/pushcut/pushcut.png
-  icon: /assets/pushcut/pushcut-icon.png
+  screenshot: /assets/apps/pushcut/pushcut.png
+  icon: /assets/apps/pushcut/pushcut-icon.png
   subtitle: Triggers, notifications & widgets that kick off your automation.
   app_store: https://itunes.apple.com/app/id1450936447
   website: https://pushcut.io
