@@ -22,7 +22,13 @@
 - name: Capsule
   published: false
   screenshot: /assets/apps/capsule/screenshot.png
-  icon: /assets/icon.png
+  icon: /assets/capsule/icon.png
   subtitle: Keep track of your vitamins and medication.
   app_store: TKTK
   website: TKTK
+- name: SnailedIt.social
+  published: true
+  screenshot: /assets/apps/mastodon/screenshot.png
+  icon: /assets/apps/mastodon/icon.png
+  subtitle: A small hosted Mastodon instance for those in want or need of a smaller community focused on kindness, consideration and open-mindedness.
+  website: https://snailedit.social
