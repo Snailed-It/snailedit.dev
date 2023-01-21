@@ -25,6 +25,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://snailedit.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: SnailedItDev
+social_links:
+  mastodon:
+    - name: david
+      link: https://snailedit.social/@david
+    - name: dom
+      link: https://snailedit.social/@dom
+    - name: rose
+      link: https://snailedit.social/@rosemary
 
 # Build settings
 theme: minima

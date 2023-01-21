@@ -4,3 +4,6 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
+{% for profile in site.social_links.mastodon %}
+<link rel="me external nofollow" href="{{ profile.link }}">
+{% endfor %}
