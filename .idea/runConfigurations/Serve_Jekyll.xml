@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Serve Jekyll" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="bundle exec jekyll serve" />
+    <option name="SCRIPT_TEXT" value="bundle update &amp;&amp; bundle install &amp;&amp; bundle exec jekyll serve --watch --future --unpublished --livereload" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />
@@ -13,7 +13,7 @@
     <option name="EXECUTE_SCRIPT_FILE" value="false" />
     <envs />
     <method v="2">
-      <option name="LaunchBrowser.Before.Run" url="http://localhost:4000" />
+      <option name="LaunchBrowser.Before.Run" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" url="http://localhost:4000" />
     </method>
   </configuration>
 </component>
