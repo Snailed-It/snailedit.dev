@@ -1,6 +1,7 @@
 [
   {
     "name": "Our Apps",
+    "published": true,
     "apps": [
       {
         "name": "WhenWorks",
@@ -47,4 +48,39 @@
         "website": "https://snailedit.social"
       }
     ]
-  }]
+  },
+  {
+    "name": "Alex Hay",
+    "description": "After the sad passing of Alex Hay, Snailed It Development Ltd has taken over maintenance and support of his apps.",
+    "published": true,
+    "apps": [
+      {
+        "name": "ToolBox Pro for Shortcuts",
+        "published": true,
+        "screenshot": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.png",
+        "icon": "/assets/apps/toolbox_pro/icon.png",
+        "subtitle": "130+ powerful new actions to use within Apple’s Shortcuts app.",
+        "website": null,
+        "app_store": "https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977"
+      },
+      {
+        "name": "Nautomate",
+        "published": true,
+        "screenshot": "/assets/apps/nautomate/nautomate_screenshot.png",
+        "icon": "/assets/apps/nautomate/icon.png",
+        "subtitle": "Notion actions in Shortcuts",
+        "website": null,
+        "app_store": "https://apps.apple.com/us/app/nautomate/id1608529689"
+      },
+      {
+        "name": "Logger for Shortcuts",
+        "published": true,
+        "screenshot": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot.png",
+        "icon": "/assets/apps/shortcuts_logger/icon.png",
+        "subtitle": "The first developer console designed for Shortcuts.",
+        "website": null,
+        "app_store": "https://apps.apple.com/us/app/logger-for-shortcuts/id1611554653"
+      }
+    ]
+  }
+]

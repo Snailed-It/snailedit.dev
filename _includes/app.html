@@ -1,10 +1,10 @@
 <section id="apps">
-    {% assign app_groups = site.data.apps %}
+    {% assign app_groups = site.data.apps | where: "published", true %}
     {% for group in app_groups %}
         <div class="app-group">
             <h2>{{ group.name }}</h2>
             {% if group.description %}
-                <p>{{ group.description }}</p>
+                {{ group.description | markdownify }}
             {% endif %}
             <div class="app-grid">
                 {% assign apps = group.apps | where: "published", true %}
