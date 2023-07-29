@@ -52,7 +52,7 @@
   {
     "name": "Alex Hay",
     "description": "After the sad passing of Alex Hay, Snailed It Development Ltd has taken over maintenance and support of his apps.",
-    "published": false,
+    "published": true,
     "apps": [
       {
         "name": "ToolBox Pro for Shortcuts",
