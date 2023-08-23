@@ -16,8 +16,9 @@ layout: default
             {%- assign app_slug = app.name | slugify: "pretty" -%}
             <div class="app app-{{ app_slug }}" id="{{ app_slug }}">
                 <div class="name">
-                    <a href="{%- if app.app_store -%}{{ app.app_store }}{%- else -%}{{ app.website }}{%- endif -%}"><img
-                                alt="{{ app.name }} App Icon" class="icon" src="{{ app.icon }}"></a>
+                    <a href="{%- if app.app_store -%}{{ app.app_store }}{%- else -%}{{ app.website }}{%- endif -%}">
+                        <img alt="{{ app.name }} App Icon" title="{{ app.name }} App Icon" class="icon" src="{{ app.icon }}">
+                    </a>
                     <h3>{{ app.name }}</h3>
                 </div>
                 {%- capture app_link -%}
