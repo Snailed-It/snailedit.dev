@@ -37,6 +37,8 @@ social_links:
 # Build settings
 theme: minima
 
+show_excerpts: true
+
 minima:
   skin: auto
 
@@ -62,3 +64,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      published: true
