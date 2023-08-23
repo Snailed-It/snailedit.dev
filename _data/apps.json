@@ -103,8 +103,8 @@
         "subtitle": "130+ powerful new actions to use within Apple’s Shortcuts app.",
         "press": {
           "include": true,
-          "kit_link": "/assets/press_kits/ToolboxPro_PressKit.zip",
-          "kit_size": "110 MB",
+          "kit_link": null,
+          "kit_size": null,
           "summary": null,
           "order": 4
         },
