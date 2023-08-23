@@ -40,11 +40,12 @@ layout: default
                     {%- assign app_data = app_data | push: line -%}
                 {%- endif -%}
                 {%- if app.press.kit_link -%}
-                    {%- assign press_kit_link = app.press.kit_link | absolute_url -%}
                     {%- capture line -%}
                         <strong>Press Kit:</strong> <a
-                            href="{{ press_kit_link }}">{{ press_kit_link }}</a>
-                        <small>({{ app.press.kit_size }})</small>
+                            href="{{ app.press.kit_link }}">{{ app.press.kit_link }}</a>
+                        {%- if app.press.kit_size -%}
+                        &nbsp;<small>({{ app.press.kit_size }})</small>
+                        {%- endif -%}
                     {%- endcapture -%}
                     {%- assign app_data = app_data | push: line -%}
                 {%- endif -%}
