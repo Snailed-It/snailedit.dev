@@ -117,7 +117,7 @@
         "type": "app",
         "screenshot": "/assets/apps/nautomate/nautomate_screenshot.png",
         "icon": "/assets/apps/nautomate/icon.png",
-        "subtitle": "Notion actions in Shortcuts",
+        "subtitle": "Automate Notion with Shortcuts actions.",
         "press": {
           "include": true,
           "kit_link": null,

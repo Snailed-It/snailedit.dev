@@ -10,11 +10,11 @@
                 {% assign apps = group.apps | where: "published", true %}
                 {% for app in apps %}
                     <div class="app">
-                        <img alt="{{ app.name }} App" class="screenshot" src="{{ app.screenshot }}">
+                        <img alt="{{ app.name }} App" title="{{ app.name }} App" class="screenshot" src="{{ app.screenshot }}">
 
                         <div class="name">
                             <a href="{% if app.app_store %}{{ app.app_store }}{% else %}{{ app.website }}{% endif %}"><img
-                                        alt="{{ app.name }} App Icon" class="icon" src="{{ app.icon }}"></a>
+                                        alt="{{ app.name }} App Icon" title="{{ app.name }} App Icon" class="icon" src="{{ app.icon }}"></a>
                             <h3>{{ app.name }}</h3>
                         </div>
 
@@ -24,6 +24,7 @@
                             {% if app.app_store %}
                                 <a href="{{ app.app_store }}"><img
                                             alt="Download {{ app.name }} on the App Store"
+                                            title="Download {{ app.name }} on the App Store"
                                             src="/assets/apps/download_on_app_store.svg"></a>
                             {% endif %}
                             <a class="button" href="{{ app.website }}">Learn more ›</a>
