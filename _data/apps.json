@@ -32,7 +32,7 @@
           "include": true,
           "kit_link": null,
           "kit_size": null,
-          "summary": null,
+          "summary": "Pushcut allows you to send custom actionable notifications to other devices, create custom widgets, run background automations and even use a dedicated device to run Shortcuts at any time without needing to tap to approve it.",
           "order": 3
         },
         "website": "https://pushcut.io"
@@ -79,7 +79,7 @@
         "icon": "/assets/apps/mastodon/icon.png",
         "subtitle": "A small hosted Mastodon instance for those in want or need of a smaller community focused on kindness, consideration and open-mindedness.",
         "press": {
-          "include": true,
+          "include": false,
           "kit_link": null,
           "kit_size": null,
           "summary": null,
@@ -105,7 +105,7 @@
           "include": true,
           "kit_link": null,
           "kit_size": null,
-          "summary": null,
+          "summary": "ToolBox Pro provides over 130 additional actions to Shortcuts, allowing a user to create incredibly powerful automation workflows, expanding the power of Shortcuts.",
           "order": 4
         },
         "website": "https://toolboxpro.app",
@@ -122,7 +122,7 @@
           "include": true,
           "kit_link": null,
           "kit_size": null,
-          "summary": null,
+          "summary": "Nautomate brings the power of Shortcuts to Notion, allowing users to expand their automation workflow, by adding data to autonomously Notion databases, or building rich pages automatically.",
           "order": 6
         },
         "website": "https://www.nautomate.app",
@@ -139,7 +139,7 @@
           "include": true,
           "kit_link": null,
           "kit_size": null,
-          "summary": null,
+          "summary": "Logger makes it easy to build and debug advanced Shortcuts by allowing users to easily log messages from within their Shortcuts, making building advanced Shortcuts easier and faster.",
           "order": 5
         },
         "website": "https://shortcutslogger.dev",
