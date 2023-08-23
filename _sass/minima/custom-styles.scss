@@ -115,3 +115,41 @@ section:not(:last-of-type) {
   top: 0;
   width: 100%;
 }
+
+figure {
+    text-align: center;
+    figcaption {
+        margin-top: 0.5em;
+    }
+}
+
+.press {
+    .press-apps {
+        .app {
+            .name {
+                display: flex;
+                grid-auto-flow: row;
+                grid-column-gap: 10px;
+                grid-template-columns: 60px 1fr;
+
+                h3 {
+                    font-size: 1.5em;
+                    line-height: 50px;
+                }
+
+                img {
+                    &.icon {
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        border-radius: 10px;
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+
+            &:not(:first-of-type) {
+                margin-top: 3em;
+            }
+        }
+    }
+}
