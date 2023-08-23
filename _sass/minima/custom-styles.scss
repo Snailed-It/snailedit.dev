@@ -124,6 +124,17 @@ figure {
 }
 
 .press {
+    .combined_snails img {
+        background-color: #eee;
+        padding: 1em;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1em;
+        @media (prefers-color-scheme: dark) {
+            background-color: #222;
+        }
+    }
     .press-apps {
         .app {
             .name {
