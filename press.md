@@ -10,10 +10,10 @@ A full high-res press kit, including details on all of our apps is available for
 
 These press kits contain images, iconography, and screenshots of our various products for press, media, and publishers. They’re free to use when referencing Snailed It and our software. If you require a specific screenshot or asset, please get in touch and we can help provide what you need.
 
-For any questions, please contact us [us via email](mailto:{{ site.press_email | encode_email }}).
+For any questions, please contact [us via email](mailto:{{ site.press_email | encode_email }}).
 
 ## About Snailed It
-{% include img_caption.html image="/assets/combined_logo.png" alt="The Snailed It logo in its three main colours" class="combined_snails" %}
+{% include img_caption.html image="/assets/combined_logo.png" alt="The Snailed It logo" class="combined_snails" %}
 
 
 Snailed It Development Ltd is an independent development company formed by a group of friends from the UK. Created by Rosemary Orchard, David Stephens and Dom Chester in September 2021, Snailed It proceeded to create and run a series of apps, including [WhenWorks](https://whenworks.app), [FocusCuts](https://focuscuts.com/), and a Mastodon instance at [SnailedIt.Social](https://snailedit.social/).
