@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: home
+layout: blog
 pagination:
   enabled: true
 ---
