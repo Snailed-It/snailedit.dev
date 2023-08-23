@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<span class="press">
+{{ content }}
+
+<section id="apps" class="press-apps">
+    <h2>The Apps</h2>
+    {%- assign app_groups = site.data.apps | where: "published", true -%}
+    {%- for group in app_groups -%}
+        {%- assign apps = group.apps | where: "published", true -%}
+        {%- assign apps = apps | where: "type", "app" -%}
+        {%- assign apps = apps | where: "press.include", true -%}
+        {%- assign apps = apps | order: "order" -%}
+        {%- for app in apps -%}
+            {%- assign app_slug = app.name | slugify: "pretty" -%}
+            <div class="app app-{{ app_slug }}" id="{{ app_slug }}">
+                <div class="name">
+                    <a href="{%- if app.app_store -%}{{ app.app_store }}{%- else -%}{{ app.website }}{%- endif -%}"><img
+                                alt="{{ app.name }} App Icon" class="icon" src="{{ app.icon }}"></a>
+                    <h3>{{ app.name }}</h3>
+                </div>
+                {%- capture app_link -%}
+                    [{{ app.name }}]({{ app.website }})
+                {%- endcapture -%}
+                {%- assign app_summary = app.press.summary | replace_first: app.name, app_link -%}
+                {{ app_summary | markdownify }}
+                {%- assign app_data = "" | split: "" -%}
+                {%- if app.website -%}
+                    {%- capture line -%}
+                        <strong>Website:</strong> <a href="{{ app.website }}">{{ app.website }}</a>
+                    {%- endcapture -%}
+                    {%- assign app_data = app_data | push: line -%}
+                {%- endif -%}
+                {%- if app.app_store -%}
+                    {%- capture line -%}
+                        <strong>App Store:</strong> <a href="{{ app.app_store }}">{{ app.app_store }}</a>
+                    {%- endcapture -%}
+                    {%- assign app_data = app_data | push: line -%}
+                {%- endif -%}
+                {%- if app.press.kit_link -%}
+                    {%- assign press_kit_link = app.press.kit_link | absolute_url -%}
+                    {%- capture line -%}
+                        <strong>Press Kit:</strong> <a
+                            href="{{ press_kit_link }}">{{ press_kit_link }}</a>
+                        <small>({{ app.press.kit_size }})</small>
+                    {%- endcapture -%}
+                    {%- assign app_data = app_data | push: line -%}
+                {%- endif -%}
+                {% if app_data != empty %}
+                    <p>{{ app_data | join: "<br />" }}</p>
+                {%- endif -%}
+            </div>
+        {%- endfor -%}
+    {%- endfor -%}
+</section>
+</span>

@@ -5,46 +5,86 @@
     "apps": [
       {
         "name": "WhenWorks",
+        "type": "app",
         "published": true,
         "screenshot": "/assets/apps/whenworks/screenshot.png",
         "icon": "/assets/apps/whenworks/icon.webp",
         "subtitle": "Meet without the back and forth.",
         "app_store": "https://itunes.apple.com/app/id1356360346",
+        "press": {
+          "include": true,
+          "kit_link": null,
+          "kit_size": null,
+          "summary": "WhenWorks eliminates the back-and-forth by allowing others to book time with you online, only when you're free and only during time slots you've defined. Just share your scheduling link in email or on your website, then sit back and let WhenWorks do the rest.",
+          "order": 1
+        },
         "website": "https://whenworks.app"
       },
       {
         "name": "Pushcut",
+        "type": "app",
         "published": true,
         "screenshot": "/assets/apps/pushcut/pushcut.png",
         "icon": "/assets/apps/pushcut/pushcut-icon.png",
         "subtitle": "Triggers, notifications & widgets that kick off your automation.",
         "app_store": "https://itunes.apple.com/app/id1450936447",
+        "press": {
+          "include": true,
+          "kit_link": null,
+          "kit_size": null,
+          "summary": null,
+          "order": 3
+        },
         "website": "https://pushcut.io"
       },
       {
         "name": "FocusCuts",
+        "type": "app",
         "published": true,
         "screenshot": "/assets/apps/focuscuts/focuscuts-screenshot.png",
         "icon": "/assets/apps/focuscuts/icon.png",
         "subtitle": "A macOS app which provides Shortcuts actions to get your current Focus mode, and lets you choose",
         "app_store": "https://apps.apple.com/app/focuscuts/id1613519455",
+        "press": {
+          "include": true,
+          "kit_link": null,
+          "kit_size": null,
+          "summary": "FocusCuts is a status bar application for macOS that gives you additional actions for Shortcuts. FocusCuts also gives you a custom list of Shortcuts per Focus Mode allowing you to have different lists of easily accessible Shortcuts available as you need them.",
+          "order": 2
+        },
         "website": "https://focuscuts.com"
       },
       {
         "name": "Capsule",
+        "type": "app",
         "published": false,
         "screenshot": "/assets/apps/capsule/screenshot.png",
         "icon": "/assets/icon.png",
         "subtitle": "Keep track of your vitamins and medication.",
-        "app_store": "TKTK",
-        "website": "TKTK"
+        "app_store": null,
+        "press": {
+          "include": true,
+          "kit_link": null,
+          "kit_size": null,
+          "summary": null,
+          "order": 1
+        },
+        "website": null
       },
       {
         "name": "SnailedIt.social",
+        "type": "service",
         "published": true,
         "screenshot": "/assets/apps/mastodon/screenshot.png",
         "icon": "/assets/apps/mastodon/icon.png",
         "subtitle": "A small hosted Mastodon instance for those in want or need of a smaller community focused on kindness, consideration and open-mindedness.",
+        "press": {
+          "include": true,
+          "kit_link": null,
+          "kit_size": null,
+          "summary": null,
+          "order": 1
+        },
         "website": "https://snailedit.social"
       }
     ]
@@ -55,30 +95,54 @@
     "published": true,
     "apps": [
       {
-        "name": "ToolBox Pro for Shortcuts",
+        "name": "ToolBox Pro",
         "published": true,
+        "type": "app",
         "screenshot": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.png",
         "icon": "/assets/apps/toolbox_pro/icon.png",
         "subtitle": "130+ powerful new actions to use within Apple’s Shortcuts app.",
-        "website": null,
+        "press": {
+          "include": true,
+          "kit_link": "/assets/press_kits/ToolboxPro_PressKit.zip",
+          "kit_size": "110 MB",
+          "summary": null,
+          "order": 4
+        },
+        "website": "https://toolboxpro.app",
         "app_store": "https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977"
       },
       {
         "name": "Nautomate",
         "published": true,
+        "type": "app",
         "screenshot": "/assets/apps/nautomate/nautomate_screenshot.png",
         "icon": "/assets/apps/nautomate/icon.png",
         "subtitle": "Notion actions in Shortcuts",
-        "website": null,
+        "press": {
+          "include": true,
+          "kit_link": null,
+          "kit_size": null,
+          "summary": null,
+          "order": 6
+        },
+        "website": "https://www.nautomate.app",
         "app_store": "https://apps.apple.com/us/app/nautomate/id1608529689"
       },
       {
-        "name": "Logger for Shortcuts",
+        "name": "Logger",
         "published": true,
+        "type": "app",
         "screenshot": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot.png",
         "icon": "/assets/apps/shortcuts_logger/icon.png",
         "subtitle": "The first developer console designed for Shortcuts.",
-        "website": null,
+        "press": {
+          "include": true,
+          "kit_link": null,
+          "kit_size": null,
+          "summary": null,
+          "order": 5
+        },
+        "website": "https://shortcutslogger.dev",
         "app_store": "https://apps.apple.com/us/app/logger-for-shortcuts/id1611554653"
       }
     ]
