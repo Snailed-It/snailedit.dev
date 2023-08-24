@@ -2,7 +2,7 @@
 title: 'Toolbox Pro, Logger for Shortcuts, and Nautomate'
 type: post
 published: true
-date: 2022-08-25 20:00
+date: 2023-08-25 20:00
 redirect_from:
   - "/alex-hay-apps"
 ---
