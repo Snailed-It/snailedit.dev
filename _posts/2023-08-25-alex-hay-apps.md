@@ -19,7 +19,7 @@ While Alex was an incredible talented developer, producing a series of much love
 
 Alex was in the process of producing a major update to Toolbox Pro, which we plan on finishing, while continuing to add further Shortcut Actions to this well loved App.
 
-We are still in the process of gaining access to all of Alex's accounts, as well as still familiarising ourselves with the code base, so we appreciate your time and patience as we start getting updated released.
+We are still in the process of gaining access to all of Alex's accounts, as well as still familiarising ourselves with the code base, so we appreciate your time and patience as we start getting updates released.
 
 Please [contact us](mailto:{{ site.email | encode_email }}) with any questions you may have and we will get back to you as soon as possible.
 
