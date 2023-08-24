@@ -6,7 +6,7 @@ redirect_from:
 ---
 
 # Press Kit
-A full high-res press kit, including details on all of our apps is available for download [here](TKTKTKT)(XXX mb). Downloads for the individual apps are available below and on each products website.
+A full high-res press kit, including details on all of our apps is available for download [here](https://assets.snailedit.dev/snailed_it_development_press_kit.zip)(195 MB). Downloads for the individual apps are available below and on each products website.
 
 These press kits contain images, iconography, and screenshots of our various products for press, media, and publishers. They’re free to use when referencing Snailed It and our software. If you require a specific screenshot or asset, please get in touch and we can help provide what you need.
 

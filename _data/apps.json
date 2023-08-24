@@ -30,8 +30,8 @@
         "app_store": "https://itunes.apple.com/app/id1450936447",
         "press": {
           "include": true,
-          "kit_link": null,
-          "kit_size": null,
+          "kit_link": "https://assets.snailedit.dev/pushcut_press_kit.zip",
+          "kit_size": "10 MB",
           "summary": "Pushcut allows you to send custom actionable notifications to other devices, create custom widgets, run background automations and even use a dedicated device to run Shortcuts at any time without needing to tap to approve it.",
           "order": 3
         },
@@ -103,8 +103,8 @@
         "subtitle": "130+ powerful new actions to use within Apple’s Shortcuts app.",
         "press": {
           "include": true,
-          "kit_link": null,
-          "kit_size": null,
+          "kit_link": "https://assets.snailedit.dev/toolbox_pro_press_kit.zip",
+          "kit_size": "122 MB",
           "summary": "ToolBox Pro provides over 130 additional actions to Shortcuts, allowing a user to create incredibly powerful automation workflows, expanding the power of Shortcuts.",
           "order": 4
         },
@@ -120,8 +120,8 @@
         "subtitle": "Automate Notion with Shortcuts actions.",
         "press": {
           "include": true,
-          "kit_link": null,
-          "kit_size": null,
+          "kit_link": "https://assets.snailedit.dev/nautomate_press_kit.zip",
+          "kit_size": "15 MB",
           "summary": "Nautomate brings the power of Shortcuts to Notion, allowing users to expand their automation workflow, by adding data to autonomously Notion databases, or building rich pages automatically.",
           "order": 6
         },
@@ -137,8 +137,8 @@
         "subtitle": "The first developer console designed for Shortcuts.",
         "press": {
           "include": true,
-          "kit_link": null,
-          "kit_size": null,
+          "kit_link": "https://assets.snailedit.dev/logger_press_kit.zip",
+          "kit_size": "45 MB",
           "summary": "Logger makes it easy to build and debug advanced Shortcuts by allowing users to easily log messages from within their Shortcuts, making building advanced Shortcuts easier and faster.",
           "order": 5
         },
