@@ -25,4 +25,4 @@ Please [contact us](mailto:{{ site.email | encode_email }}) with any questions y
 
 We consider ourselves truly honoured to be able to continue Alex's legacy and to have been entrusted as custodians of his work.
 
-{% include img_caption.html image="/assets/alex_hay_1.png" alt="In loving memory of Alex Hay" %}
+{% include img_caption.html image="/assets/alex_hay_1.png" alt="In loving memory of Alex Hay" class="portrait" %}
