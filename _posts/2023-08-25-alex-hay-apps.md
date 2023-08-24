@@ -7,7 +7,7 @@ redirect_from:
   - "/alex-hay-apps"
 ---
 
-{% include img_caption.html image="/assets/combined_alex_hay_apps.png" %}
+![](/assets/combined_alex_hay_apps.png)
 
 We're truly honoured to be able to announce that we have taken over development of [Toolbox Pro](https://toolboxpro.app), [Logger for Shortcuts](https://shortcutslogger.dev), and [Nautomate](https://www.nautomate.app).
 
