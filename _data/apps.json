@@ -95,7 +95,7 @@
     "published": true,
     "apps": [
       {
-        "name": "ToolBox Pro",
+        "name": "Toolbox Pro",
         "published": true,
         "type": "app",
         "screenshot": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.png",
@@ -105,7 +105,7 @@
           "include": true,
           "kit_link": "https://assets.snailedit.dev/toolbox_pro_press_kit.zip",
           "kit_size": "122 MB",
-          "summary": "ToolBox Pro provides over 130 additional actions to Shortcuts, allowing a user to create incredibly powerful automation workflows, expanding the power of Shortcuts.",
+          "summary": "Toolbox Pro provides over 130 additional actions to Shortcuts, allowing a user to create incredibly powerful automation workflows, expanding the power of Shortcuts.",
           "order": 4
         },
         "website": "https://toolboxpro.app",
