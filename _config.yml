@@ -72,3 +72,6 @@ defaults:
       type: "posts"
     values:
       published: true
+      
+whitelist:
+  - jekyll-redirect-from

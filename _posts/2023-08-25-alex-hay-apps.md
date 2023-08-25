@@ -4,7 +4,7 @@ type: post
 published: true
 date: 2023-08-25 15:00
 redirect_from:
-  - "/alex-hay-apps"
+  - /alex-hay-apps
 ---
 
 ![](/assets/combined_alex_hay_apps.png)
