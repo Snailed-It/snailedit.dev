@@ -18,7 +18,7 @@ For any questions, please contact [us via email](mailto:{{ site.press_email | en
 
 Snailed It Development Ltd is an independent development company formed by a group of friends from the UK. Created by Rosemary Orchard, David Stephens and Dom Chester in September 2021, Snailed It proceeded to create and run a series of apps, including [WhenWorks](https://whenworks.app), [FocusCuts](https://focuscuts.com/), and a Mastodon instance at [SnailedIt.Social](https://snailedit.social/).
 
-In August of 2022, Snailed It entered into a contracting agreement with Simon Leeb, founder of [Pushcut](https://pushcut.io), and now manage the day-to-day operation of Pushcut
+In August of 2022, Snailed It entered into a contracting agreement with Simon Leeb, founder of [Pushcut](https://pushcut.io), and now manage the day-to-day operation of Pushcut.
 
 After the tragic death of [Mr Alexander "Alex" Hay](https://alexhay.dev/) in March 2023, Snailed It are honoured to have been entrusted by his family to take over and continue the work on Alex’s iOS apps. As of July 2023, Snailed It have taken over the development of [Toolbox Pro](https://toolboxpro.app/), [Logger for Shortcuts](https://shortcutslogger.dev/), and [Nautomate](https://www.nautomate.app/).
 
