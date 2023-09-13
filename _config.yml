@@ -34,6 +34,8 @@ social_links:
       link: https://snailedit.social/@dom
     - name: rose
       link: https://snailedit.social/@rosemary
+    - name: Toolbox Pro
+      link: https://snailedit.social/@toolboxpro
 
 # Build settings
 theme: minima
