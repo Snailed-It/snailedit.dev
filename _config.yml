@@ -40,6 +40,8 @@ social_links:
       link: https://snailedit.social/@logger
     - name: Nautomate
       link: https://snailedit.social/@nautomate
+    - name: MenuBox
+      link: https://snailedit.social/@menubox
 
 # Build settings
 theme: minima
