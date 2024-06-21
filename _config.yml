@@ -36,6 +36,10 @@ social_links:
       link: https://snailedit.social/@rosemary
     - name: Toolbox Pro
       link: https://snailedit.social/@toolboxpro
+    - name: Logger for Shortcuts
+      link: https://snailedit.social/@logger
+    - name: Nautomate
+      link: https://snailedit.social/@nautomate
 
 # Build settings
 theme: minima
