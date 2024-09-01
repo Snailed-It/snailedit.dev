@@ -3,27 +3,27 @@
     "name": "Our Apps",
     "published": true,
     "apps": [
-      {
-        "name": "WhenWorks",
-        "type": "app",
-        "published": true,
-        "screenshot": "/assets/apps/whenworks/screenshot.png",
-        "screenshot_webp": {
-          "default": "/assets/apps/whenworks/screenshot.webp",
-          "sizes": [{"path":" /assets/apps/whenworks/screenshot-728.webp", "width": 728}, {"path": "/assets/apps/whenworks/screenshot-364.webp", "width": 364}]
-        },
-        "icon": "/assets/apps/whenworks/icon.webp",
-        "subtitle": "Meet without the back and forth.",
-        "app_store": "https://itunes.apple.com/app/id1356360346",
-        "press": {
-          "include": true,
-          "kit_link": null,
-          "kit_size": null,
-          "summary": "WhenWorks eliminates the back-and-forth by allowing others to book time with you online, only when you're free and only during time slots you've defined. Just share your scheduling link in email or on your website, then sit back and let WhenWorks do the rest.",
-          "order": 1
-        },
-        "website": "https://whenworks.app"
-      },
+      // {
+      //   "name": "WhenWorks",
+      //   "type": "app",
+      //   "published": true,
+      //   "screenshot": "/assets/apps/whenworks/screenshot.png",
+      //   "screenshot_webp": {
+      //     "default": "/assets/apps/whenworks/screenshot.webp",
+      //     "sizes": [{"path":" /assets/apps/whenworks/screenshot-728.webp", "width": 728}, {"path": "/assets/apps/whenworks/screenshot-364.webp", "width": 364}]
+      //   },
+      //   "icon": "/assets/apps/whenworks/icon.webp",
+      //   "subtitle": "Meet without the back and forth.",
+      //   "app_store": "https://itunes.apple.com/app/id1356360346",
+      //   "press": {
+      //     "include": true,
+      //     "kit_link": null,
+      //     "kit_size": null,
+      //     "summary": "WhenWorks eliminates the back-and-forth by allowing others to book time with you online, only when you're free and only during time slots you've defined. Just share your scheduling link in email or on your website, then sit back and let WhenWorks do the rest.",
+      //     "order": 1
+      //   },
+      //   "website": "https://whenworks.app"
+      // },
       {
         "name": "Pushcut",
         "type": "app",
