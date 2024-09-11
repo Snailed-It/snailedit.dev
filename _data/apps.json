@@ -127,10 +127,27 @@
           "kit_link": "https://assets.snailedit.dev/logger_press_kit.zip",
           "kit_size": "45 MB",
           "summary": "Logger makes it easy to build and debug advanced Shortcuts by allowing users to easily log messages from within their Shortcuts, making building advanced Shortcuts easier and faster.",
-          "order": 5
+          "order": 6
         },
         "website": "https://shortcutslogger.dev",
         "app_store": "https://apps.apple.com/us/app/logger-for-shortcuts/id1611554653"
+      },
+      {
+        "name": "Menu Box",
+        "published": true,
+        "type": "app",
+        "screenshot": "/assets/apps/menu_box/screenshot.png",
+        "icon": "/assets/apps/menu_box/icon.png",
+        "subtitle": "Design beautiful menus with data to use in Shortcuts.",
+        "press": {
+          "include": true,
+          "kit_link": "https://assets.snailedit.dev/menu_box_press_kit.zip",
+          "kit_size": "59MB",
+          "summary": "Menu Box provides beautiful menus in Shortcuts, allowing users to further customise their advanced Shortcuts beyond what the native Shortcuts actions provides.",
+          "order": 5
+        },
+        "website": "https://menubox.app",
+        "app_store": "https://apps.apple.com/app/menu-box/id6463440793"
       }
     ]
   }
