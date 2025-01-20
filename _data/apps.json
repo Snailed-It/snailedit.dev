@@ -4,27 +4,6 @@
     "published": true,
     "apps": [
       {
-        "name": "Pushcut",
-        "type": "app",
-        "published": true,
-        "screenshot": "/assets/apps/pushcut/pushcut.png",
-        "screenshot_webp": {
-          "default": "/assets/apps/pushcut/pushcut.webp",
-          "sizes": [{"path":" /assets/apps/pushcut/pushcut-1255.webp", "width": 1255}, {"path": "/assets/apps/pushcut/pushcut-753.webp", "width": 753}, {"path": "/assets/apps/pushcut/pushcut-376.webp", "width": 376}]
-        },
-        "icon": "/assets/apps/pushcut/pushcut-icon.png",
-        "subtitle": "Triggers, notifications & widgets that kick off your automation.",
-        "app_store": "https://itunes.apple.com/app/id1450936447",
-        "press": {
-          "include": true,
-          "kit_link": "https://assets.snailedit.dev/pushcut_press_kit.zip",
-          "kit_size": "10 MB",
-          "summary": "Pushcut allows you to send custom actionable notifications to other devices, create custom widgets, run background automations and even use a dedicated device to run Shortcuts at any time without needing to tap to approve it.",
-          "order": 3
-        },
-        "website": "https://pushcut.io"
-      },
-      {
         "name": "FocusCuts",
         "type": "app",
         "published": true,
