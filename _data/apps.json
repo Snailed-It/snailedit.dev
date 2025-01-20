@@ -30,7 +30,7 @@
         "published": true,
         "screenshot": "/assets/apps/focuscuts/focuscuts-screenshot.png",
         "icon": "/assets/apps/focuscuts/icon.png",
-        "subtitle": "A macOS app which provides Shortcuts actions to get your current Focus mode, and lets you choose",
+        "subtitle": "A macOS app which provides Shortcuts actions to get your current Focus mode, and lets you choose Shortcuts in your menu bar based on your focus mode.",
         "app_store": "https://apps.apple.com/app/focuscuts/id1613519455",
         "press": {
           "include": true,
@@ -73,14 +73,7 @@
           "order": 1
         },
         "website": "https://snailedit.social"
-      }
-    ]
-  },
-  {
-    "name": "Alex Hay",
-    "description": "After the sad passing of Alex Hay, Snailed It Development Ltd has taken over development and support of his apps.",
-    "published": true,
-    "apps": [
+      },
       {
         "name": "Toolbox Pro",
         "published": true,
@@ -148,6 +141,34 @@
         },
         "website": "https://menubox.app",
         "app_store": "https://apps.apple.com/app/menu-box/id6463440793"
+      }
+    ]
+  },
+  {
+    "name": "Contracting",
+    "description": "Other apps we work on...",
+    "published": true,
+    apps: [
+      {
+        "name": "Pushcut",
+        "type": "app",
+        "published": true,
+        "screenshot": "/assets/apps/pushcut/pushcut.png",
+        "screenshot_webp": {
+          "default": "/assets/apps/pushcut/pushcut.webp",
+          "sizes": [{"path":" /assets/apps/pushcut/pushcut-1255.webp", "width": 1255}, {"path": "/assets/apps/pushcut/pushcut-753.webp", "width": 753}, {"path": "/assets/apps/pushcut/pushcut-376.webp", "width": 376}]
+        },
+        "icon": "/assets/apps/pushcut/pushcut-icon.png",
+        "subtitle": "Triggers, notifications & widgets that kick off your automation.",
+        "app_store": "https://itunes.apple.com/app/id1450936447",
+        "press": {
+          "include": true,
+          "kit_link": "https://assets.snailedit.dev/pushcut_press_kit.zip",
+          "kit_size": "10 MB",
+          "summary": "Pushcut allows you to send custom actionable notifications to other devices, create custom widgets, run background automations and even use a dedicated device to run Shortcuts at any time without needing to tap to approve it.",
+          "order": 3
+        },
+        "website": "https://pushcut.io"
       }
     ]
   }
