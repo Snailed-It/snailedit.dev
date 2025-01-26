@@ -8,6 +8,13 @@
         "published": true,
         "type": "app",
         "screenshot": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.png",
+        "screenshot_webp": {
+          "default": {
+            "path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.webp",
+            "width": 1045
+          },
+          "sizes": [{"path":" /assets/apps/toolbox_pro/toolbox_pro_screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-990.webp", "width": 990}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-360.webp", "width": 360}]
+        },
         "icon": "/assets/apps/toolbox_pro/icon.png",
         "subtitle": "130+ powerful new actions to use within Apple’s Shortcuts app.",
         "press": {
@@ -25,6 +32,13 @@
         "published": true,
         "type": "app",
         "screenshot": "/assets/apps/nautomate/nautomate_screenshot.png",
+        "screenshot_webp": {
+          "default": {
+            "path": "/assets/apps/nautomate/nautomate_screenshot.webp",
+            "width": 1005
+          },
+          "sizes": [{"path":" /assets/apps/nautomate/nautomate_screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/nautomate/nautomate_screenshot-990.webp", "width": 990}, {"path": "/assets/apps/nautomate/nautomate_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/nautomate/nautomate_screenshot-360.webp", "width": 360}]
+        },
         "icon": "/assets/apps/nautomate/icon.png",
         "subtitle": "Automate Notion with Shortcuts actions.",
         "press": {
@@ -42,6 +56,13 @@
         "published": true,
         "type": "app",
         "screenshot": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot.png",
+        "screenshot_webp": {
+          "default": {
+            "path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot.webp",
+            "width": 1011
+          },
+          "sizes": [{"path":" /assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-360.webp", "width": 360}]
+        },
         "icon": "/assets/apps/shortcuts_logger/icon.png",
         "subtitle": "The first developer console designed for Shortcuts.",
         "press": {
@@ -76,6 +97,13 @@
         "type": "app",
         "published": true,
         "screenshot": "/assets/apps/focuscuts/focuscuts-screenshot.png",
+        "screenshot_webp": {
+          "default": {
+            "path": "/assets/apps/focuscuts/focuscuts-screenshot.webp",
+            "width": 1405
+          },
+          "sizes": [{"path":" /assets/apps/focuscuts/focuscuts-screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/focuscuts/focuscuts-screenshot-720.webp", "width": 720}, {"path": "/assets/apps/focuscuts/focuscuts-screenshot-360.webp", "width": 360}]
+        },
         "icon": "/assets/apps/focuscuts/icon.png",
         "subtitle": "A macOS app which provides Shortcuts actions to get your current Focus mode, and lets you choose Shortcuts in your menu bar based on your focus mode.",
         "app_store": "https://apps.apple.com/app/focuscuts/id1613519455",
@@ -110,6 +138,13 @@
         "type": "service",
         "published": true,
         "screenshot": "/assets/apps/mastodon/screenshot.png",
+        "screenshot_webp": {
+          "default": {
+            "path": "/assets/apps/mastodon/screenshot.webp",
+            "width": 1301
+          },
+          "sizes": [{"path":" /assets/apps/mastodon/screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/mastodon/screenshot-720.webp", "width": 720}, {"path": "/assets/apps/mastodon/screenshot-360.webp", "width": 360}]
+        },
         "icon": "/assets/apps/mastodon/icon.png",
         "subtitle": "A small hosted Mastodon instance for those in want or need of a smaller community focused on kindness, consideration and open-mindedness.",
         "press": {
@@ -134,7 +169,10 @@
         "published": true,
         "screenshot": "/assets/apps/pushcut/pushcut.png",
         "screenshot_webp": {
-          "default": "/assets/apps/pushcut/pushcut.webp",
+          "default": {
+            "path": "/assets/apps/pushcut/pushcut.webp",
+            "width": 2509
+          },
           "sizes": [{"path":" /assets/apps/pushcut/pushcut-1255.webp", "width": 1255}, {"path": "/assets/apps/pushcut/pushcut-753.webp", "width": 753}, {"path": "/assets/apps/pushcut/pushcut-376.webp", "width": 376}]
         },
         "icon": "/assets/apps/pushcut/pushcut-icon.png",

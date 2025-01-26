@@ -12,7 +12,7 @@
                     <div class="app">
                         <picture class="screenshot">
                             {% if app.screenshot_webp.default %}
-                            <source type="image/webp" srcset="{% if app.screenshot_webp.sizes %}{% for image in app.screenshot_webp.sizes %}{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.screenshot_webp.default }}" sizes="(min-width: 820px) 360px, (min-width: 600px) calc(42.5vw + 20px), calc(100vw - 30px)">
+                            <source type="image/webp" srcset="{% if app.screenshot_webp.sizes %}{% for image in app.screenshot_webp.sizes %}{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.screenshot_webp.default.path }} {{ app.screenshot_webp.default.width }}w" sizes="(min-width: 860px) 360px, (min-width: 600px) calc(35.42vw + 63px), calc(100vw - 30px)">
                             {% endif %}
                             <source type="image/png" srcset="{{ app.screenshot }}">
                             <img alt="{{ app.name }} App" title="{{ app.name }} App" src="{{ app.screenshot }}">
