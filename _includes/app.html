@@ -10,12 +10,20 @@
                 {% assign apps = group.apps | where: "published", true %}
                 {% for app in apps %}
                     <div class="app">
+                        <noscript>
+                            <img alt="{{ app.name }} App" title="{{ app.name }} App" src="{{ app.screenshot }}">
+                        </noscript>
                         <picture class="screenshot">
                             {% if app.screenshot_webp.default %}
-                            <source type="image/webp" srcset="{% if app.screenshot_webp.sizes %}{% for image in app.screenshot_webp.sizes %}{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.screenshot_webp.default.path }} {{ app.screenshot_webp.default.width }}w" sizes="(min-width: 860px) 360px, (min-width: 600px) calc(35.42vw + 63px), calc(100vw - 30px)">
+                            <source type="image/webp"
+                                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    data-srcset="{% if app.screenshot_webp.sizes %}{% for image in app.screenshot_webp.sizes %}{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.screenshot_webp.default.path }} {{ app.screenshot_webp.default.width }}w"
+                                    sizes="(min-width: 820px) 360px, (min-width: 600px) calc(42.5vw + 20px), 91.07vw"
+                                    class="lazyload"
+                            >
                             {% endif %}
-                            <source type="image/png" srcset="{{ app.screenshot }}">
-                            <img alt="{{ app.name }} App" title="{{ app.name }} App" src="{{ app.screenshot }}">
+                            <source type="image/png" data-srcset="{{ app.screenshot }}" class="lazyload">
+                            <img alt="{{ app.name }} App" title="{{ app.name }} App" src="{{ app.screenshot }}" class="lazyload">
                         </picture>
 
                         <div class="name">

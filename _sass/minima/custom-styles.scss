@@ -171,3 +171,7 @@ figure {
     margin-right: auto;
     max-height: 30em;
 }
+
+.no-js img.lazyload {
+  display: none;
+}
