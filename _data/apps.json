@@ -98,6 +98,12 @@
         "published": true,
         "type": "app",
         "screenshot": "/assets/apps/menu_box/screenshot.png",
+        "screenshot_webp": {
+          "default": {
+            "path": "/assets/apps/menu_box/screenshot.webp",
+            "width": 858
+          }
+        },
         "icon": "/assets/apps/menu_box/icon.png",
         "icon_webp": {
           "default": {
