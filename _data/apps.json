@@ -216,7 +216,7 @@
     "name": "Contracting",
     "description": "",
     "published": true,
-    apps: [
+    "apps": [
       {
         "name": "Pushcut",
         "type": "app",
