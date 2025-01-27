@@ -55,12 +55,12 @@
 
                         <div class="buttons">
                             {% if app.app_store %}
-                                <a href="{{ app.app_store }}"><img
+                                <a href="{{ app.app_store }}" onclick="fathom.trackEvent('App Store link: {{ app.name }}');"><img
                                             alt="Download {{ app.name }} on the App Store"
                                             title="Download {{ app.name }} on the App Store"
                                             src="/assets/apps/download_on_app_store.svg"></a>
                             {% endif %}
-                            <a class="button" href="{{ app.website }}">Learn more ›</a>
+                            <a class="button" href="{{ app.website }}" onclick="fathom.trackEvent('Website link: {{ app.name }}');">Learn more ›</a>
                         </div>
                     </div>
                 {% endfor %}
