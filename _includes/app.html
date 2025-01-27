@@ -13,22 +13,41 @@
                         <noscript>
                             <img alt="{{ app.name }} App" title="{{ app.name }} App" src="{{ app.screenshot }}">
                         </noscript>
+                        <div class="ratio-box" style="padding-bottom: calc({{ app.screenshot_webp.default.height }}/ {{ app.screenshot_webp.default.width }} * 100%);">
                         <picture class="screenshot">
                             {% if app.screenshot_webp.default %}
                             <source type="image/webp"
-                                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    srcset="https://snailedit.dev/cdn-cgi/image/width=60,quality=1,format=webp/{{ app.screenshot_webp.default.path }} 60w"
                                     data-srcset="{% if app.screenshot_webp.sizes %}{% for image in app.screenshot_webp.sizes %}{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.screenshot_webp.default.path }} {{ app.screenshot_webp.default.width }}w"
                                     sizes="(min-width: 820px) 360px, (min-width: 600px) calc(42.5vw + 20px), 91.07vw"
-                                    class="lazyload"
+                                    class="lazyload blur-up"
                             >
                             {% endif %}
-                            <source type="image/png" data-srcset="{{ app.screenshot }}" class="lazyload">
-                            <img alt="{{ app.name }} App" title="{{ app.name }} App" src="{{ app.screenshot }}" class="lazyload">
+                            <source type="image/png" data-srcset="{% if app.screenshot_webp.sizes %}{% for image in app.screenshot_webp.sizes %}https://snailedit.dev/cdn-cgi/image/width={{ image.width }},format=png/{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.screenshot }} {{ app.screenshot_webp.default.width }}w"
+                                    sizes="(min-width: 820px) 360px, (min-width: 600px) calc(42.5vw + 20px), calc(100vw - 30px)"
+                                    class="lazyload blur-up">
+                            <img alt="{{ app.name }} App" title="{{ app.name }} App" src="https://snailedit.dev/cdn-cgi/image/width=360,format=auto/{{ app.screenshot }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ app.screenshot }}" class="lazyload blur-up">
                         </picture>
+                        </div>
 
                         <div class="name">
-                            <a href="{% if app.app_store %}{{ app.app_store }}{% else %}{{ app.website }}{% endif %}"><img
-                                        alt="{{ app.name }} App Icon" title="{{ app.name }} App Icon" class="icon" src="{{ app.icon }}"></a>
+                            <a href="{% if app.app_store %}{{ app.app_store }}{% else %}{{ app.website }}{% endif %}">
+                                <noscript>
+                                    <img alt="{{ app.name }} App Icon" title="{{ app.name }} App Icon" class="icon" src="{{ app.icon }}">
+                                </noscript>
+                                <picture class="icon">
+                                    {% if app.icon_webp.default %}
+                                    <source type="image/webp"
+                                            srcset="https://snailedit.dev/cdn-cgi/image/width=60,quality=50,format=webp/{{ app.icon_webp.default.path }} 60w"
+                                            data-srcset="{% if app.icon_webp.sizes %}{% for image in app.icon_webp.sizes %}{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.icon_webp.default.path }} {{ app.icon_webp.default.width }}w"
+                                            sizes="60px"
+                                            class="lazyload blur-up"
+                                    >
+                                    {% endif %}
+                                    <source type="image/png" data-srcset="{{ app.icon }}" class="lazyload blur-up">
+                                    <img alt="{{ app.name }} App" title="{{ app.name }} App" src="https://snailedit.dev/cdn-cgi/image/width=180,format=auto/{{ app.icon }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ app.icon }}" class="lazyload">
+                                </picture>
+                            </a>
                             <h3>{{ app.name }}</h3>
                         </div>
 

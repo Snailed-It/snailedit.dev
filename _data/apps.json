@@ -11,16 +11,18 @@
         "screenshot_webp": {
           "default": {
             "path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.webp",
-            "width": 1045
+            "width": 1045,
+            "height": 1280
           },
-          "sizes": [{"path":" /assets/apps/toolbox_pro/toolbox_pro_screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-990.webp", "width": 990}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-360.webp", "width": 360}]
+          "sizes": [{"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-990.webp", "width": 990}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-360.webp", "width": 360}]
         },
         "icon": "/assets/apps/toolbox_pro/icon.png",
         "icon_webp": {
           "default": {
             "path": "/assets/apps/toolbox_pro/icon.webp",
             "width": 512
-          }
+          },
+          "sizes": [{"path":" /assets/apps/toolbox_pro/icon-180.webp", "width": 180}]
         },
         "subtitle": "130+ powerful new actions to use within Apple’s Shortcuts app.",
         "press": {
@@ -41,16 +43,18 @@
         "screenshot_webp": {
           "default": {
             "path": "/assets/apps/nautomate/nautomate_screenshot.webp",
-            "width": 1005
+            "width": 1005,
+            "height": 1234
           },
-          "sizes": [{"path":" /assets/apps/nautomate/nautomate_screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/nautomate/nautomate_screenshot-990.webp", "width": 990}, {"path": "/assets/apps/nautomate/nautomate_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/nautomate/nautomate_screenshot-360.webp", "width": 360}]
+          "sizes": [{"path": "/assets/apps/nautomate/nautomate_screenshot-990.webp", "width": 990}, {"path": "/assets/apps/nautomate/nautomate_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/nautomate/nautomate_screenshot-360.webp", "width": 360}]
         },
         "icon": "/assets/apps/nautomate/icon.png",
         "icon_webp": {
           "default": {
             "path": "/assets/apps/nautomate/icon.webp",
             "width": 512
-          }
+          },
+          "sizes": [{"path":" /assets/apps/nautomate/icon-180.webp", "width": 180}]
         },
         "subtitle": "Automate Notion with Shortcuts actions.",
         "press": {
@@ -71,7 +75,8 @@
         "screenshot_webp": {
           "default": {
             "path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot.webp",
-            "width": 1011
+            "width": 1011,
+            "height": 711
           },
           "sizes": [{"path":" /assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-360.webp", "width": 360}]
         },
@@ -80,7 +85,8 @@
           "default": {
             "path": "/assets/apps/shortcuts_logger/icon.webp",
             "width": 512
-          }
+          },
+          "sizes": [{"path":" /assets/apps/shortcuts_logger/icon-180.webp", "width": 180}]
         },
         "subtitle": "The first developer console designed for Shortcuts.",
         "press": {
@@ -101,7 +107,8 @@
         "screenshot_webp": {
           "default": {
             "path": "/assets/apps/menu_box/screenshot.webp",
-            "width": 858
+            "width": 858,
+            "height": 425
           }
         },
         "icon": "/assets/apps/menu_box/icon.png",
@@ -109,7 +116,8 @@
           "default": {
             "path": "/assets/apps/menu_box/icon.webp",
             "width": 512
-          }
+          },
+          "sizes": [{"path":" /assets/apps/menu_box/icon-180.webp", "width": 180}]
         },
         "subtitle": "Design beautiful menus with data to use in Shortcuts.",
         "press": {
@@ -130,7 +138,8 @@
         "screenshot_webp": {
           "default": {
             "path": "/assets/apps/focuscuts/focuscuts-screenshot.webp",
-            "width": 1405
+            "width": 1405,
+            "height": 843
           },
           "sizes": [{"path":" /assets/apps/focuscuts/focuscuts-screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/focuscuts/focuscuts-screenshot-720.webp", "width": 720}, {"path": "/assets/apps/focuscuts/focuscuts-screenshot-360.webp", "width": 360}]
         },
@@ -178,7 +187,8 @@
         "screenshot_webp": {
           "default": {
             "path": "/assets/apps/mastodon/screenshot.webp",
-            "width": 1301
+            "width": 1301,
+            "height": 721
           },
           "sizes": [{"path":" /assets/apps/mastodon/screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/mastodon/screenshot-720.webp", "width": 720}, {"path": "/assets/apps/mastodon/screenshot-360.webp", "width": 360}]
         },
@@ -186,9 +196,9 @@
         "icon_webp": {
           "default": {
             "path": "/assets/apps/mastodon/icon.webp",
-            "width": 1024,
-            "height": 721
-          }
+            "width": 1024
+          },
+          "sizes": [{"path":" /assets/apps/mastodon/icon-180.webp", "width": 180}]
         },
         "subtitle": "A small hosted Mastodon instance for those in want or need of a smaller community focused on kindness, consideration and open-mindedness.",
         "press": {
@@ -215,7 +225,8 @@
         "screenshot_webp": {
           "default": {
             "path": "/assets/apps/pushcut/pushcut.webp",
-            "width": 2509
+            "width": 2509,
+            "height": 2256
           },
           "sizes": [{"path":" /assets/apps/pushcut/pushcut-1255.webp", "width": 1255}, {"path": "/assets/apps/pushcut/pushcut-753.webp", "width": 753}, {"path": "/assets/apps/pushcut/pushcut-376.webp", "width": 376}]
         },
