@@ -177,25 +177,6 @@ figure {
   display: none;
 }
 
-.ratio-box {
-  position: relative;
-  height: 0;
-  display: block;
-  width: 100%;
-  /* padding-bottom is calculated and rendered in to HTML */
-
-  img,
-  iframe,
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-}
-
 .blur-up {
   -webkit-filter: blur(5px);
   filter: blur(5px);

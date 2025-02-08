@@ -13,7 +13,7 @@
                         <noscript>
                             <img alt="{{ app.name }} App" title="{{ app.name }} App" src="{{ app.screenshot }}">
                         </noscript>
-                        <div class="ratio-box" style="padding-bottom: calc({{ app.screenshot_webp.default.height }}/ {{ app.screenshot_webp.default.width }} * 100%);">
+                        <div style="aspect-ratio: {{ app.screenshot_webp.default.width }}/{{ app.screenshot_webp.default.height }};">
                         <picture class="screenshot">
                             {% if app.screenshot_webp.default %}
                             <source type="image/webp"
