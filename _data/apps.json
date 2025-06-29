@@ -3,213 +3,319 @@
     "name": "Our Apps",
     "published": true,
     "apps": [
-      {
-        "name": "Toolbox Pro",
-        "published": true,
-        "type": "app",
-        "screenshot": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.png",
-        "screenshot_webp": {
-          "default": {
-            "path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.webp",
-            "width": 1045,
-            "height": 1280
-          },
-          "sizes": [{"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-990.webp", "width": 990}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-360.webp", "width": 360}]
+        {
+            "name": "Capsule",
+            "published": true,
+            "type": "app",
+            "icon": "/assets/apps/capsule/icon.png",
+            "icon_webp": {
+                "default": {
+                    "path": "/assets/apps/capsule/icon.webp",
+                    "width": 512
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/capsule/icon-180.webp",
+                        "width": 180
+                    }
+                ]
+            },
+            "subtitle": "A medication tracking app with widgets, repeating notifications, Shortcuts support and more. Never miss taking a medication again.",
+            "press": {
+                "include": false,
+                "kit_link": "https://assets.snailedit.dev/toolbox_pro_press_kit.zip",
+                "kit_size": "122 MB",
+                "summary": "Toolbox Pro provides over 130 additional actions to Shortcuts, allowing a user to create incredibly powerful automation workflows, expanding the power of Shortcuts.",
+                "order": 4
+            },
+            "website": "https://capsuletracker.com",
+            "app_store": "https://apps.apple.com/us/app/capsule-medication-tracker/id6744626190"
         },
-        "icon": "/assets/apps/toolbox_pro/icon.png",
-        "icon_webp": {
-          "default": {
-            "path": "/assets/apps/toolbox_pro/icon.webp",
-            "width": 512
-          },
-          "sizes": [{"path":" /assets/apps/toolbox_pro/icon-180.webp", "width": 180}]
+        {
+            "name": "Toolbox Pro",
+            "published": true,
+            "type": "app",
+            "screenshot": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.png",
+            "screenshot_webp": {
+                "default": {
+                    "path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot.webp",
+                    "width": 1045,
+                    "height": 1280
+                },
+                "sizes": [
+                    {
+                        "path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-990.webp",
+                        "width": 990
+                    },
+                    {
+                        "path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-720.webp",
+                        "width": 720
+                    },
+                    {
+                        "path": "/assets/apps/toolbox_pro/toolbox_pro_screenshot-360.webp",
+                        "width": 360
+                    }
+                ]
+            },
+            "icon": "/assets/apps/toolbox_pro/icon.png",
+            "icon_webp": {
+                "default": {
+                    "path": "/assets/apps/toolbox_pro/icon.webp",
+                    "width": 512
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/toolbox_pro/icon-180.webp",
+                        "width": 180
+                    }
+                ]
+            },
+            "subtitle": "130+ powerful new actions to use within Apple’s Shortcuts app.",
+            "press": {
+                "include": true,
+                "kit_link": "https://assets.snailedit.dev/toolbox_pro_press_kit.zip",
+                "kit_size": "122 MB",
+                "summary": "Toolbox Pro provides over 130 additional actions to Shortcuts, allowing a user to create incredibly powerful automation workflows, expanding the power of Shortcuts.",
+                "order": 4
+            },
+            "website": "https://toolboxpro.app",
+            "app_store": "https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977"
         },
-        "subtitle": "130+ powerful new actions to use within Apple’s Shortcuts app.",
-        "press": {
-          "include": true,
-          "kit_link": "https://assets.snailedit.dev/toolbox_pro_press_kit.zip",
-          "kit_size": "122 MB",
-          "summary": "Toolbox Pro provides over 130 additional actions to Shortcuts, allowing a user to create incredibly powerful automation workflows, expanding the power of Shortcuts.",
-          "order": 4
+        {
+            "name": "Nautomate",
+            "published": true,
+            "type": "app",
+            "screenshot": "/assets/apps/nautomate/nautomate_screenshot.png",
+            "screenshot_webp": {
+                "default": {
+                    "path": "/assets/apps/nautomate/nautomate_screenshot.webp",
+                    "width": 1005,
+                    "height": 1234
+                },
+                "sizes": [
+                    {
+                        "path": "/assets/apps/nautomate/nautomate_screenshot-990.webp",
+                        "width": 990
+                    },
+                    {
+                        "path": "/assets/apps/nautomate/nautomate_screenshot-720.webp",
+                        "width": 720
+                    },
+                    {
+                        "path": "/assets/apps/nautomate/nautomate_screenshot-360.webp",
+                        "width": 360
+                    }
+                ]
+            },
+            "icon": "/assets/apps/nautomate/icon.png",
+            "icon_webp": {
+                "default": {
+                    "path": "/assets/apps/nautomate/icon.webp",
+                    "width": 512
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/nautomate/icon-180.webp",
+                        "width": 180
+                    }
+                ]
+            },
+            "subtitle": "Automate Notion with Shortcuts actions.",
+            "press": {
+                "include": true,
+                "kit_link": "https://assets.snailedit.dev/nautomate_press_kit.zip",
+                "kit_size": "15 MB",
+                "summary": "Nautomate brings the power of Shortcuts to Notion, allowing users to expand their automation workflow, by adding data to autonomously Notion databases, or building rich pages automatically.",
+                "order": 6
+            },
+            "website": "https://www.nautomate.app",
+            "app_store": "https://apps.apple.com/us/app/nautomate/id1608529689"
         },
-        "website": "https://toolboxpro.app",
-        "app_store": "https://apps.apple.com/us/app/toolbox-pro-for-shortcuts/id1476205977"
-      },
-      {
-        "name": "Nautomate",
-        "published": true,
-        "type": "app",
-        "screenshot": "/assets/apps/nautomate/nautomate_screenshot.png",
-        "screenshot_webp": {
-          "default": {
-            "path": "/assets/apps/nautomate/nautomate_screenshot.webp",
-            "width": 1005,
-            "height": 1234
-          },
-          "sizes": [{"path": "/assets/apps/nautomate/nautomate_screenshot-990.webp", "width": 990}, {"path": "/assets/apps/nautomate/nautomate_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/nautomate/nautomate_screenshot-360.webp", "width": 360}]
+        {
+            "name": "Logger",
+            "published": true,
+            "type": "app",
+            "screenshot": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot.png",
+            "screenshot_webp": {
+                "default": {
+                    "path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot.webp",
+                    "width": 1011,
+                    "height": 711
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-1080.webp",
+                        "width": 1080
+                    },
+                    {
+                        "path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-720.webp",
+                        "width": 720
+                    },
+                    {
+                        "path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-360.webp",
+                        "width": 360
+                    }
+                ]
+            },
+            "icon": "/assets/apps/shortcuts_logger/icon.png",
+            "icon_webp": {
+                "default": {
+                    "path": "/assets/apps/shortcuts_logger/icon.webp",
+                    "width": 512
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/shortcuts_logger/icon-180.webp",
+                        "width": 180
+                    }
+                ]
+            },
+            "subtitle": "The first developer console designed for Shortcuts.",
+            "press": {
+                "include": true,
+                "kit_link": "https://assets.snailedit.dev/logger_press_kit.zip",
+                "kit_size": "45 MB",
+                "summary": "Logger makes it easy to build and debug advanced Shortcuts by allowing users to easily log messages from within their Shortcuts, making building advanced Shortcuts easier and faster.",
+                "order": 6
+            },
+            "website": "https://shortcutslogger.dev",
+            "app_store": "https://apps.apple.com/us/app/logger-for-shortcuts/id1611554653"
         },
-        "icon": "/assets/apps/nautomate/icon.png",
-        "icon_webp": {
-          "default": {
-            "path": "/assets/apps/nautomate/icon.webp",
-            "width": 512
-          },
-          "sizes": [{"path":" /assets/apps/nautomate/icon-180.webp", "width": 180}]
+        {
+            "name": "Menu Box",
+            "published": true,
+            "type": "app",
+            "screenshot": "/assets/apps/menu_box/screenshot.png",
+            "screenshot_webp": {
+                "default": {
+                    "path": "/assets/apps/menu_box/screenshot.webp",
+                    "width": 858,
+                    "height": 425
+                }
+            },
+            "icon": "/assets/apps/menu_box/icon.png",
+            "icon_webp": {
+                "default": {
+                    "path": "/assets/apps/menu_box/icon.webp",
+                    "width": 512
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/menu_box/icon-180.webp",
+                        "width": 180
+                    }
+                ]
+            },
+            "subtitle": "Design beautiful menus with data to use in Shortcuts.",
+            "press": {
+                "include": true,
+                "kit_link": "https://assets.snailedit.dev/menu_box_press_kit.zip",
+                "kit_size": "59MB",
+                "summary": "Menu Box provides beautiful menus in Shortcuts, allowing users to further customise their advanced Shortcuts beyond what the native Shortcuts actions provides.",
+                "order": 5
+            },
+            "website": "https://menubox.app",
+            "app_store": "https://apps.apple.com/app/menu-box/id6463440793"
         },
-        "subtitle": "Automate Notion with Shortcuts actions.",
-        "press": {
-          "include": true,
-          "kit_link": "https://assets.snailedit.dev/nautomate_press_kit.zip",
-          "kit_size": "15 MB",
-          "summary": "Nautomate brings the power of Shortcuts to Notion, allowing users to expand their automation workflow, by adding data to autonomously Notion databases, or building rich pages automatically.",
-          "order": 6
+        {
+            "name": "FocusCuts",
+            "type": "app",
+            "published": true,
+            "screenshot": "/assets/apps/focuscuts/focuscuts-screenshot.png",
+            "screenshot_webp": {
+                "default": {
+                    "path": "/assets/apps/focuscuts/focuscuts-screenshot.webp",
+                    "width": 1405,
+                    "height": 843
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/focuscuts/focuscuts-screenshot-1080.webp",
+                        "width": 1080
+                    },
+                    {
+                        "path": "/assets/apps/focuscuts/focuscuts-screenshot-720.webp",
+                        "width": 720
+                    },
+                    {
+                        "path": "/assets/apps/focuscuts/focuscuts-screenshot-360.webp",
+                        "width": 360
+                    }
+                ]
+            },
+            "icon": "/assets/apps/focuscuts/icon.png",
+            "icon_webp": {
+                "default": {
+                    "path": "/assets/apps/focuscuts/icon.webp",
+                    "width": 1024
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/focuscuts/icon-180.webp",
+                        "width": 180
+                    }
+                ]
+            },
+            "subtitle": "A macOS app which provides Shortcuts actions to get your current Focus mode, and lets you choose Shortcuts in your menu bar based on your focus mode.",
+            "app_store": "https://apps.apple.com/app/focuscuts/id1613519455",
+            "press": {
+                "include": true,
+                "kit_link": null,
+                "kit_size": null,
+                "summary": "FocusCuts is a status bar application for macOS that gives you additional actions for Shortcuts. FocusCuts also gives you a custom list of Shortcuts per Focus Mode allowing you to have different lists of easily accessible Shortcuts available as you need them.",
+                "order": 2
+            },
+            "website": "https://focuscuts.com"
         },
-        "website": "https://www.nautomate.app",
-        "app_store": "https://apps.apple.com/us/app/nautomate/id1608529689"
-      },
-      {
-        "name": "Logger",
-        "published": true,
-        "type": "app",
-        "screenshot": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot.png",
-        "screenshot_webp": {
-          "default": {
-            "path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot.webp",
-            "width": 1011,
-            "height": 711
-          },
-          "sizes": [{"path":" /assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-720.webp", "width": 720}, {"path": "/assets/apps/shortcuts_logger/logger_for_shortcuts_screenshot-360.webp", "width": 360}]
-        },
-        "icon": "/assets/apps/shortcuts_logger/icon.png",
-        "icon_webp": {
-          "default": {
-            "path": "/assets/apps/shortcuts_logger/icon.webp",
-            "width": 512
-          },
-          "sizes": [{"path":" /assets/apps/shortcuts_logger/icon-180.webp", "width": 180}]
-        },
-        "subtitle": "The first developer console designed for Shortcuts.",
-        "press": {
-          "include": true,
-          "kit_link": "https://assets.snailedit.dev/logger_press_kit.zip",
-          "kit_size": "45 MB",
-          "summary": "Logger makes it easy to build and debug advanced Shortcuts by allowing users to easily log messages from within their Shortcuts, making building advanced Shortcuts easier and faster.",
-          "order": 6
-        },
-        "website": "https://shortcutslogger.dev",
-        "app_store": "https://apps.apple.com/us/app/logger-for-shortcuts/id1611554653"
-      },
-      {
-        "name": "Menu Box",
-        "published": true,
-        "type": "app",
-        "screenshot": "/assets/apps/menu_box/screenshot.png",
-        "screenshot_webp": {
-          "default": {
-            "path": "/assets/apps/menu_box/screenshot.webp",
-            "width": 858,
-            "height": 425
-          }
-        },
-        "icon": "/assets/apps/menu_box/icon.png",
-        "icon_webp": {
-          "default": {
-            "path": "/assets/apps/menu_box/icon.webp",
-            "width": 512
-          },
-          "sizes": [{"path":" /assets/apps/menu_box/icon-180.webp", "width": 180}]
-        },
-        "subtitle": "Design beautiful menus with data to use in Shortcuts.",
-        "press": {
-          "include": true,
-          "kit_link": "https://assets.snailedit.dev/menu_box_press_kit.zip",
-          "kit_size": "59MB",
-          "summary": "Menu Box provides beautiful menus in Shortcuts, allowing users to further customise their advanced Shortcuts beyond what the native Shortcuts actions provides.",
-          "order": 5
-        },
-        "website": "https://menubox.app",
-        "app_store": "https://apps.apple.com/app/menu-box/id6463440793"
-      },
-      {
-        "name": "FocusCuts",
-        "type": "app",
-        "published": true,
-        "screenshot": "/assets/apps/focuscuts/focuscuts-screenshot.png",
-        "screenshot_webp": {
-          "default": {
-            "path": "/assets/apps/focuscuts/focuscuts-screenshot.webp",
-            "width": 1405,
-            "height": 843
-          },
-          "sizes": [{"path":" /assets/apps/focuscuts/focuscuts-screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/focuscuts/focuscuts-screenshot-720.webp", "width": 720}, {"path": "/assets/apps/focuscuts/focuscuts-screenshot-360.webp", "width": 360}]
-        },
-        "icon": "/assets/apps/focuscuts/icon.png",
-        "icon_webp": {
-          "default": {
-            "path": "/assets/apps/focuscuts/icon.webp",
-            "width": 1024
-          },
-          "sizes": [{"path":" /assets/apps/focuscuts/icon-180.webp", "width": 180}]
-        },
-        "subtitle": "A macOS app which provides Shortcuts actions to get your current Focus mode, and lets you choose Shortcuts in your menu bar based on your focus mode.",
-        "app_store": "https://apps.apple.com/app/focuscuts/id1613519455",
-        "press": {
-          "include": true,
-          "kit_link": null,
-          "kit_size": null,
-          "summary": "FocusCuts is a status bar application for macOS that gives you additional actions for Shortcuts. FocusCuts also gives you a custom list of Shortcuts per Focus Mode allowing you to have different lists of easily accessible Shortcuts available as you need them.",
-          "order": 2
-        },
-        "website": "https://focuscuts.com"
-      },
-      {
-        "name": "Capsule",
-        "type": "app",
-        "published": false,
-        "screenshot": "/assets/apps/capsule/screenshot.png",
-        "icon": "/assets/icon.png",
-        "subtitle": "Keep track of your vitamins and medication.",
-        "app_store": null,
-        "press": {
-          "include": true,
-          "kit_link": null,
-          "kit_size": null,
-          "summary": null,
-          "order": 1
-        },
-        "website": null
-      },
-      {
-        "name": "SnailedIt.social",
-        "type": "service",
-        "published": true,
-        "screenshot": "/assets/apps/mastodon/screenshot.png",
-        "screenshot_webp": {
-          "default": {
-            "path": "/assets/apps/mastodon/screenshot.webp",
-            "width": 1301,
-            "height": 721
-          },
-          "sizes": [{"path":" /assets/apps/mastodon/screenshot-1080.webp", "width": 1080}, {"path": "/assets/apps/mastodon/screenshot-720.webp", "width": 720}, {"path": "/assets/apps/mastodon/screenshot-360.webp", "width": 360}]
-        },
-        "icon": "/assets/apps/mastodon/icon.png",
-        "icon_webp": {
-          "default": {
-            "path": "/assets/apps/mastodon/icon.webp",
-            "width": 1024
-          },
-          "sizes": [{"path":" /assets/apps/mastodon/icon-180.webp", "width": 180}]
-        },
-        "subtitle": "A small hosted Mastodon instance for those in want or need of a smaller community focused on kindness, consideration and open-mindedness.",
-        "press": {
-          "include": false,
-          "kit_link": null,
-          "kit_size": null,
-          "summary": null,
-          "order": 1
-        },
-        "website": "https://snailedit.social"
-      }
+        {
+            "name": "SnailedIt.social",
+            "type": "service",
+            "published": true,
+            "screenshot": "/assets/apps/mastodon/screenshot.png",
+            "screenshot_webp": {
+                "default": {
+                    "path": "/assets/apps/mastodon/screenshot.webp",
+                    "width": 1301,
+                    "height": 721
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/mastodon/screenshot-1080.webp",
+                        "width": 1080
+                    },
+                    {
+                        "path": "/assets/apps/mastodon/screenshot-720.webp",
+                        "width": 720
+                    },
+                    {
+                        "path": "/assets/apps/mastodon/screenshot-360.webp",
+                        "width": 360
+                    }
+                ]
+            },
+            "icon": "/assets/apps/mastodon/icon.png",
+            "icon_webp": {
+                "default": {
+                    "path": "/assets/apps/mastodon/icon.webp",
+                    "width": 1024
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/mastodon/icon-180.webp",
+                        "width": 180
+                    }
+                ]
+            },
+            "subtitle": "A small hosted Mastodon instance for those in want or need of a smaller community focused on kindness, consideration and open-mindedness.",
+            "press": {
+                "include": false,
+                "kit_link": null,
+                "kit_size": null,
+                "summary": null,
+                "order": 1
+            },
+            "website": "https://snailedit.social"
+        }
     ]
   },
   {
