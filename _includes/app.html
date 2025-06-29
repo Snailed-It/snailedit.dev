@@ -10,27 +10,7 @@
                 {% assign apps = group.apps | where: "published", true %}
                 {% for app in apps %}
                     <div class="app">
-                        <noscript>
-                            <img alt="{{ app.name }} App" title="{{ app.name }} App" src="{{ app.screenshot }}">
-                        </noscript>
-                        <div style="aspect-ratio: {{ app.screenshot_webp.default.width }}/{{ app.screenshot_webp.default.height }};">
-                        <picture class="screenshot">
-                            {% if app.screenshot_webp.default %}
-                            <source type="image/webp"
-                                    srcset="https://snailedit.dev/cdn-cgi/image/width=60,quality=1,format=webp/{{ app.screenshot_webp.default.path }} 60w"
-                                    data-srcset="{% if app.screenshot_webp.sizes %}{% for image in app.screenshot_webp.sizes %}{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.screenshot_webp.default.path }} {{ app.screenshot_webp.default.width }}w"
-                                    sizes="(min-width: 820px) 360px, (min-width: 600px) calc(42.5vw + 20px), 91.07vw"
-                                    class="lazyload blur-up"
-                            >
-                            {% endif %}
-                            <source type="image/png" data-srcset="{% if app.screenshot_webp.sizes %}{% for image in app.screenshot_webp.sizes %}https://snailedit.dev/cdn-cgi/image/width={{ image.width }},format=png/{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.screenshot }} {{ app.screenshot_webp.default.width }}w"
-                                    sizes="(min-width: 820px) 360px, (min-width: 600px) calc(42.5vw + 20px), calc(100vw - 30px)"
-                                    class="lazyload blur-up">
-                            <img alt="{{ app.name }} App" title="{{ app.name }} App" src="https://snailedit.dev/cdn-cgi/image/width=360,format=auto/{{ app.screenshot }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ app.screenshot }}" class="lazyload blur-up">
-                        </picture>
-                        </div>
-
-                        <div class="name">
+                        <div>
                             <a href="{% if app.app_store %}{{ app.app_store }}{% else %}{{ app.website }}{% endif %}">
                                 <noscript>
                                     <img alt="{{ app.name }} App Icon" title="{{ app.name }} App Icon" class="icon" src="{{ app.icon }}">
@@ -48,20 +28,22 @@
                                     <img alt="{{ app.name }} App" title="{{ app.name }} App" src="https://snailedit.dev/cdn-cgi/image/width=180,format=auto/{{ app.icon }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ app.icon }}" class="lazyload">
                                 </picture>
                             </a>
-                            <h3>{{ app.name }}</h3>
                         </div>
+                        <h3>{{ app.name }}</h3>
 
-                        <p>{{ app.subtitle }}</p>
+                        <p>{{ app.subtitle }}<br /><small><a class="button" href="{{ app.website }}"
+                                    onclick="fathom.trackEvent('Website link: {{ app.name }}');">Learn
+                                    more ›</a></small>
+                        </p>
 
-                        <div class="buttons">
-                            {% if app.app_store %}
+                        {% if app.app_store %}
+                            <div class="app-store">
                                 <a href="{{ app.app_store }}" onclick="fathom.trackEvent('App Store link: {{ app.name }}');"><img
                                             alt="Download {{ app.name }} on the App Store"
                                             title="Download {{ app.name }} on the App Store"
                                             src="/assets/apps/download_on_app_store.svg"></a>
-                            {% endif %}
-                            <a class="button" href="{{ app.website }}" onclick="fathom.trackEvent('Website link: {{ app.name }}');">Learn more ›</a>
-                        </div>
+                            </div>
+                        {% endif %}
                     </div>
                 {% endfor %}
             </div>
