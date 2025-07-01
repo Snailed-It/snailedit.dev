@@ -256,7 +256,7 @@
                     }
                 ]
             },
-            "subtitle": "A macOS app which provides Shortcuts actions to get your current Focus mode, and lets you choose Shortcuts in your menu bar based on your focus mode.",
+            "subtitle": "Menu bar shortcuts for your focus mode.",
             "app_store": "https://apps.apple.com/app/focuscuts/id1613519455",
             "press": {
                 "include": true,
