@@ -20,7 +20,7 @@
                     }
                 ]
             },
-            "subtitle": "A medication tracking app with widgets, repeating notifications, Shortcuts support and more. Never miss taking a medication again.",
+            "subtitle": "Never miss taking a medication again.",
             "press": {
                 "include": false,
                 "kit_link": "https://assets.snailedit.dev/toolbox_pro_press_kit.zip",
