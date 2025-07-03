@@ -208,3 +208,14 @@ figure {
         filter: blur(0);
     }
 }
+.site-footer-inner {
+    display: flex;
+    flex-direction: row;
+
+    .icon {
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center; /* align vertical */
+      scale: 0.8;
+    }
+  }
