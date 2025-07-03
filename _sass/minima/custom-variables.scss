@@ -1,4 +1,5 @@
-// Placeholder to allow overriding predefined variables smoothly.
+$on-widescreen: 1300px !default;
+$on-xlarge: $on-widescreen !default;
 
 $snail-brand-color: rgb(76, 34, 137);
 $dm-brand-color: $snail-brand-color;
