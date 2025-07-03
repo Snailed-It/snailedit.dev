@@ -30,7 +30,7 @@
                                 </picture>
                             </a>
                         </div>
-                        <h3>{{ app.name }}</h3>
+                        <h3><a href="{{ app.website }}">{{ app.name }}</a></h3>
 
                         <p>{{ app.subtitle }}{% if app.website %}<br /><small><a class="button" href="{{ app.website }}"
                                     onclick="fathom.trackEvent('Website link: {{ app.name }}');">{{ app.website_text | default:
