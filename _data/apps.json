@@ -22,10 +22,10 @@
             },
             "subtitle": "Never miss taking a medication again.",
             "press": {
-                "include": false,
-                "kit_link": "https://assets.snailedit.dev/toolbox_pro_press_kit.zip",
-                "kit_size": "122 MB",
-                "summary": "Toolbox Pro provides over 130 additional actions to Shortcuts, allowing a user to create incredibly powerful automation workflows, expanding the power of Shortcuts.",
+                "include": true,
+                "kit_link": "https://assets.snailedit.dev/capsule_press_kit.zip",
+                "kit_size": "3.8 MB",
+                "summary": "Never miss taking a medication again.",
                 "order": 4
             },
             "website": "https://capsuletracker.com",
