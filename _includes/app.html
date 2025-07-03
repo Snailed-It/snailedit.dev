@@ -18,31 +18,32 @@
                                 <picture class="icon">
                                     {% if app.icon_webp.default %}
                                     <source type="image/webp"
-                                            srcset="https://snailedit.dev/cdn-cgi/image/width=60,quality=50,format=webp/{{ app.icon_webp.default.path }} 60w"
-                                            data-srcset="{% if app.icon_webp.sizes %}{% for image in app.icon_webp.sizes %}{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.icon_webp.default.path }} {{ app.icon_webp.default.width }}w"
-                                            sizes="60px"
-                                            class="lazyload blur-up"
-                                    >
-                                    {% endif %}
-                                    <source type="image/png" data-srcset="{{ app.icon }}" class="lazyload blur-up">
-                                    <img alt="{{ app.name }} App" title="{{ app.name }} App" src="https://snailedit.dev/cdn-cgi/image/width=180,format=auto/{{ app.icon }}" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ app.icon }}" class="lazyload">
+                                        srcset="https://snailedit.dev/cdn-cgi/image/width=60,quality=50,format=webp/{{ app.icon_webp.default.path }} 60w"
+                                        data-srcset="{% if app.icon_webp.sizes %}{% for image in app.icon_webp.sizes %}{{ image.path }} {{ image.width }}w, {% endfor %}{% endif %}{{ app.icon_webp.default.path }} {{ app.icon_webp.default.width }}w"
+                                    sizes="60px" class="lazyload blur-up">
+                                {% endif %}
+                                <source type="image/png" data-srcset="{{ app.icon }}" class="lazyload blur-up">
+                                <img alt="{{ app.name }} App" title="{{ app.name }}{% if app.type %} {{ app.type | capitalize }}{% endif %}"
+                                    src="https://snailedit.dev/cdn-cgi/image/width=180,format=auto/{{ app.icon }}"
+                                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    data-src="{{ app.icon }}" class="lazyload">
                                 </picture>
                             </a>
                         </div>
                         <h3>{{ app.name }}</h3>
 
-                        <p>{{ app.subtitle }}<br /><small><a class="button" href="{{ app.website }}"
-                                    onclick="fathom.trackEvent('Website link: {{ app.name }}');">Learn
-                                    more ›</a></small>
+                        <p>{{ app.subtitle }}{% if app.website %}<br /><small><a class="button" href="{{ app.website }}"
+                                    onclick="fathom.trackEvent('Website link: {{ app.name }}');">{{ app.website_text | default:
+                                    "Learn
+                                    more"}} ›</a></small>{% endif %}
                         </p>
 
                         {% if app.app_store %}
-                            <div class="app-store">
-                                <a href="{{ app.app_store }}" onclick="fathom.trackEvent('App Store link: {{ app.name }}');"><img
-                                            alt="Download {{ app.name }} on the App Store"
-                                            title="Download {{ app.name }} on the App Store"
-                                            src="/assets/apps/download_on_app_store.svg"></a>
-                            </div>
+                        <div class="app-store">
+                            <a href="{{ app.app_store }}" onclick="fathom.trackEvent('App Store link: {{ app.name }}');"><img
+                                    alt="Download {{ app.name }} on the App Store" title="Download {{ app.name }} on the App Store"
+                                    src="/assets/apps/download_on_app_store.svg"></a>
+                        </div>
                         {% endif %}
                     </div>
                 {% endfor %}

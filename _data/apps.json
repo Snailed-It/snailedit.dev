@@ -323,37 +323,70 @@
     "description": "",
     "published": true,
     "apps": [
-      {
-        "name": "Pushcut",
-        "type": "app",
-        "published": true,
-        "screenshot": "/assets/apps/pushcut/pushcut.png",
-        "screenshot_webp": {
-          "default": {
-            "path": "/assets/apps/pushcut/pushcut.webp",
-            "width": 2509,
-            "height": 2256
-          },
-          "sizes": [{"path":" /assets/apps/pushcut/pushcut-1255.webp", "width": 1255}, {"path": "/assets/apps/pushcut/pushcut-753.webp", "width": 753}, {"path": "/assets/apps/pushcut/pushcut-376.webp", "width": 376}]
+        {
+            "name": "Pushcut",
+            "type": "app",
+            "published": true,
+            "screenshot": "/assets/apps/pushcut/pushcut.png",
+            "screenshot_webp": {
+                "default": {
+                    "path": "/assets/apps/pushcut/pushcut.webp",
+                    "width": 2509,
+                    "height": 2256
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/pushcut/pushcut-1255.webp",
+                        "width": 1255
+                    },
+                    {
+                        "path": "/assets/apps/pushcut/pushcut-753.webp",
+                        "width": 753
+                    },
+                    {
+                        "path": "/assets/apps/pushcut/pushcut-376.webp",
+                        "width": 376
+                    }
+                ]
+            },
+            "icon": "/assets/apps/pushcut/pushcut-icon.png",
+            "icon_webp": {
+                "default": {
+                    "path": "/assets/apps/pushcut/pushcut-icon.webp",
+                    "width": 256
+                }
+            },
+            "subtitle": "Triggers, notifications & widgets that kick off your automation.",
+            "app_store": "https://itunes.apple.com/app/id1450936447",
+            "press": {
+                "include": true,
+                "kit_link": "https://assets.snailedit.dev/pushcut_press_kit.zip",
+                "kit_size": "10 MB",
+                "summary": "Pushcut allows you to send custom actionable notifications to other devices, create custom widgets, run background automations and even use a dedicated device to run Shortcuts at any time without needing to tap to approve it.",
+                "order": 3
+            },
+            "website": "https://pushcut.io"
         },
-        "icon": "/assets/apps/pushcut/pushcut-icon.png",
-        "icon_webp": {
-          "default": {
-            "path": "/assets/apps/pushcut/pushcut-icon.webp",
-            "width": 256
-          }
-        },
-        "subtitle": "Triggers, notifications & widgets that kick off your automation.",
-        "app_store": "https://itunes.apple.com/app/id1450936447",
-        "press": {
-          "include": true,
-          "kit_link": "https://assets.snailedit.dev/pushcut_press_kit.zip",
-          "kit_size": "10 MB",
-          "summary": "Pushcut allows you to send custom actionable notifications to other devices, create custom widgets, run background automations and even use a dedicated device to run Shortcuts at any time without needing to tap to approve it.",
-          "order": 3
-        },
-        "website": "https://pushcut.io"
-      }
+        {
+            "name": "Work With Us",
+            "published": true,
+            "website": "mailto:contracting@snailedit.dev",
+            "website_text": "Email Us",
+            "icon": "/assets/apps/contracting/icon.png",
+            "icon_webp": {
+                "default": {
+                    "path": "/assets/apps/contracting/icon.webp",
+                    "width": 256
+                },
+                "sizes": [
+                    {
+                        "path": " /assets/apps/contracting/icon-180.webp",
+                        "width": 180
+                    }
+                ]
+            },
+            "subtitle": "We build apps, web services and more. Send us an email and let's talk!"
+        }
     ]
   }
 ]
