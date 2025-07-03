@@ -227,4 +227,16 @@ figure {
       align-items: center; /* align vertical */
       scale: 0.8;
     }
-  }
+}
+
+section#social {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            display: inline-block;
+        }
+    }
+}

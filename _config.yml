@@ -30,18 +30,28 @@ social_links:
   mastodon:
     - name: david
       link: https://snailedit.social/@david
+      type: person
     - name: dom
       link: https://snailedit.social/@dom
+      type: person
     - name: rose
       link: https://snailedit.social/@rosemary
+      type: person
     - name: Toolbox Pro
       link: https://snailedit.social/@toolboxpro
+      type: app
     - name: Logger for Shortcuts
       link: https://snailedit.social/@logger
+      type: app
     - name: Nautomate
       link: https://snailedit.social/@nautomate
+      type: app
     - name: MenuBox
       link: https://snailedit.social/@menubox
+      type: app
+    - name: Capsule
+      link: https://snailedit.social/@capsule
+      type: app
 
 # Build settings
 theme: minima
