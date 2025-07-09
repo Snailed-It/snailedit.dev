@@ -111,8 +111,12 @@ section:not(:last-of-type) {
                 }
             }
 
-            .app-store {
-              margin-top: auto;
+            .links {
+                margin-top: auto;
+
+                .app-store {
+                    margin-top: 1em;
+                }
             }
         }
     }
