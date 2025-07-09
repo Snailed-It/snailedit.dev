@@ -34,12 +34,16 @@
 
                         <p>{{ app.subtitle }}</p>
 
-                        {% if app.website == "mailto:contracting@snailedit.dev" or app.website == "https://snailedit.social" %}
-                            {% assign link_class = "links no-app" %}
-                        {% else %}
-                            {% assign link_class = "links" %}
+                        {% if app.website == "https://snailedit.social" %}
+                            {% assign link_id = "snailedit-social-link" %}
+                        {% elsif app.website == "mailto:contracting@snailedit.dev" %}
+                            {% assign link_id = "contracting-link" %}
                         {% endif %}
-                        <div class="{{ link_class }}">
+                        {% if link_id %}
+                            <div class="links" id="{{ link_id }}">
+                        {% else %}
+                            <div class="links">
+                        {% endif %}
                             {% if app.website %}
                             <small>
                                 <a class="button" href="{{ app.website }}" onclick="fathom.trackEvent('Website link: {{ app.name }}');">
