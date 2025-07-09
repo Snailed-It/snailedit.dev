@@ -33,8 +33,13 @@
                         <h3><a href="{{ app.website }}">{{ app.name }}</a></h3>
 
                         <p>{{ app.subtitle }}</p>
-                        
-                        <div class="links">
+
+                        {% if app.website == "mailto:contracting@snailedit.dev" or app.website == "https://snailedit.social" %}
+                            {% assign link_class = "links no-app" %}
+                        {% else %}
+                            {% assign link_class = "links" %}
+                        {% endif %}
+                        <div class="{{ link_class }}">
                             {% if app.website %}
                             <small>
                                 <a class="button" href="{{ app.website }}" onclick="fathom.trackEvent('Website link: {{ app.name }}');">
