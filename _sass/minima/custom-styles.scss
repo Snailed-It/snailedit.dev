@@ -118,7 +118,14 @@ section:not(:last-of-type) {
                     margin-top: 1em;
                 }
             }
-            .links.no-app {
+            .links#snailedit-social-link {
+                margin-bottom: 3.5em;
+                @media screen and (max-width: $on-medium) {
+                    margin-bottom: inherit;
+                }
+            }
+            .links#contracting-link {
+                margin-top: inherit;
                 margin-bottom: 3.5em;
             }
         }
