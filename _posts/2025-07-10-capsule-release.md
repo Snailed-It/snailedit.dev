@@ -6,7 +6,7 @@ date: 2025-07-10 08:00
 ---
 ![A composite of screenshots from an iPhone showing Capsule in three different states. With no medications configured, configuring a medication and with a selection of medications configured..]({{ '/assets/apps/capsule/Capsule_iPhone_16_Pro_Combined.png' | relative_url }})
 
-**Never miss taking a medication again with Capsule! Out now for iPhone and iPad.**
+*Never miss taking a medication again with Capsule!*
 
 We are very excited to be announcing the release of our latest app Capsule.
 Capsule is a medication tracking app designed to make your life simpler and easier while ensuring you never miss taking a medication again.
