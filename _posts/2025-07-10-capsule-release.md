@@ -1,7 +1,7 @@
 ---
 title: 'Capsule Out Now'
 type: post
-published: true
+published: false
 date: 2025-07-10 16:30
 published_at: 2025-07-10 16:30
 ---
