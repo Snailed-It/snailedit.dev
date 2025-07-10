@@ -8,7 +8,7 @@ date: 2025-07-10 08:00
 
 *Never miss taking a medication again with Capsule!*
 
-We are very excited to be announcing the release of our latest app Capsule.
+We are very excited to be announcing the release of our latest app [Capsule](https://apps.apple.com/us/app/capsule-medication-tracker/id6744626190).
 Capsule is a medication tracking app designed to make your life simpler and easier while ensuring you never miss taking a medication again.
 
 - Add your medications and use the advanced scheduling options to ensure you take them at the right time, every time.
