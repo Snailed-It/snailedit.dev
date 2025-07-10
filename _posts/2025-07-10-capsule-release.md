@@ -2,7 +2,7 @@
 title: 'Capsule Out Now'
 type: post
 published: true
-date: 2025-07-10 08:00
+date: 2025-07-10 16:30
 ---
 ![A composite of screenshots from an iPhone showing Capsule in three different states. With no medications configured, configuring a medication and with a selection of medications configured..]({{ '/assets/apps/capsule/Capsule_iPhone_16_Pro_Combined.png' | relative_url }})
 
