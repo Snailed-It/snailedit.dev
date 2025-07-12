@@ -9,6 +9,8 @@
             <div class="app-grid">
                 {% assign apps = group.apps | where: "published", true %}
                 {% for app in apps %}
+                <div class="card">
+                    <div class="border"></div>
                     <div class="app">
                         <div>
                             <a href="{% if app.app_store %}{{ app.app_store }}{% else %}{{ app.website }}{% endif %}">
@@ -61,6 +63,9 @@
                                     </div>
                                     {% endif %}
                         </div>
+                            </div>
+                        <div class="shadow"></div>
+                        <div class="backdrop"></div>
                     </div>
                 {% endfor %}
             </div>
