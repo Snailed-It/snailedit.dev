@@ -1,8 +1,26 @@
 :root {
   --header-font-family: Advocate, -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;;
+
+    --primaryBg: hsla(155, 100%, 65%, 1%);
+    --primaryHi: hsla(155, 100%, 75%, 25%);
+    --card-border-grd1: #6C6499;
+    --card-border-grd2: #111222;
+    --card-grd1: #1F193D;
+    --card-grd2: #05060D;
+    --radial-center: rgba(173,155,255,0.3);
+    --radial-edge: rgba(11,12,22,0.3);
 }
 
-h1,
+body {
+  background: linear-gradient(to bottom, darken($snail-brand-color, 15%), #000000 80%);
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--header-font-family);
+}
+
 h2,
 h3,
 h4,
@@ -12,9 +30,20 @@ h6,
   font-family: var(--header-font-family);
 }
 
+.home-subtitle {
+    text-align: center;
+}
+
 .wrapper {
-    @media screen and (min-width: $on-xlarge) {
+    @media screen and (min-width: $on-medium) {
         max-width: calc(1000px - 30px * 2);
+        transition-property: max-width;
+        transition-duration: 2s;
+    }
+    @media screen and (min-width: $on-xlarge) {
+        max-width: calc(1300px - 30px * 2);
+        transition-property: max-width;
+        transition-duration: 2s;
     }
 }
 
@@ -66,6 +95,10 @@ section:not(:last-of-type) {
 .app-group {
     margin-bottom: 2em;
 
+    h2 {
+        text-align: center;
+    }
+
     .app-grid {
         display: flex;
         row-gap: 2em;
@@ -73,60 +106,81 @@ section:not(:last-of-type) {
         justify-content: space-evenly;
         column-gap: 0.5em;
         
-        @media screen and (min-width: $on-medium) {
+        @media screen and (min-width: $on-large) {
             column-gap: 20px;
         }
-        .app {
+
+        .card {
             min-width: 40%;
             width: 40%;
             max-width: 40%;
             align-self: stretch;
             display: inline-flex;
             flex-direction: column;
+            position: relative;
+            background: linear-gradient(135deg, var(--card-grd1), var(--card-grd2));
+            border-radius: 20px;
+            transition: all ease 0.3s;
+            //filter: drop-shadow(0px 0px 0px rgb(173,155,255));
+            z-index: 1;
 
-            @media screen and (min-width: $on-medium) {
+            @media screen and (min-width: $on-large) {
                 min-width: 20%;
                 width: 20%;
                 max-width: 20%;
             }
 
-            text-align: center;
-            .buttons img {
-                margin-right: 10px;
-            }
+            .app {
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                padding: 1em;
 
-            h3 {
-                margin-top: 0.5em;
-                text-wrap: nowrap;
-            }
+                text-align: center;
 
-            img {
-                &.icon {
-                    border: 1px solid rgba(0, 0, 0, 0.1);
-                    border-radius: 10px;
-                    height: 50px;
-                    width: 50px;
-                    margin-left: auto;
-                    margin-right: auto;
+                .buttons img {
+                    margin-right: 10px;
                 }
-            }
 
-            .links {
-                margin-top: auto;
+                h3 {
+                    margin-top: 0.5em;
+                    text-wrap: nowrap;
+                }
 
-                .app-store {
-                    margin-top: 1em;
+                img {
+                    &.icon {
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        border-radius: 10px;
+                        height: 50px;
+                        width: 50px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
                 }
-            }
-            .links#snailedit-social-link {
-                margin-bottom: 3.5em;
-                @media screen and (max-width: $on-medium) {
-                    margin-bottom: inherit;
+
+                .links {
+                    margin-top: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1em;
+
+                    .app-store {
+                        margin-top: 0;
+                    }
                 }
-            }
-            .links#contracting-link {
-                margin-top: inherit;
-                margin-bottom: 3.5em;
+                .links#snailedit-social-link {
+                    margin-bottom: 3.5em;
+                    @media screen and (max-width: $on-medium) {
+                        margin-bottom: inherit;
+                    }
+                }
+                .links#contracting-link {
+                    margin-top: inherit;
+                    margin-bottom: 3.5em;
+                }
+
             }
         }
     }
@@ -156,10 +210,89 @@ section:not(:last-of-type) {
         }
     }
 
+    .page-link {
+        clip-path: path("M 0 25 C 0 -5, -5 0, 80 0 S 160 -5, 160 25, 165 50 80 50, 0 55, 0 25");
+        border: none;
+        border-radius: 13px;
+        background-color: var(--primaryBg);
+        box-shadow: 0px -3px 15px 0px var(--primaryHi) inset;
+        //color: var(--primaryFg);
+        transition: all 0.2s ease;
+        padding: 0.5em;
+        backdrop-filter: url(#glass-blur);
+    }
+
     // Positioning context for the mobile navigation icon
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.card > p {
+    text-align: center;
+}
+
+.border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(135deg,var(--card-border-grd1),var(--card-border-grd2)) border-box;
+    -webkit-mask:
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* Hover */
+
+.card:hover > .backdrop {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top, var(--radial-center), var(--radial-edge)), linear-gradient(135deg, var(--card-grd1), var(--card-grd2));
+    z-index: -2;
+    border-radius: 20px;
+    opacity: 10%;
+    transition: all ease 0.3s;
+}
+
+.card:hover {
+    background: radial-gradient(15% 30% at top, var(--radial-center), var(--radial-edge)), linear-gradient(135deg, var(--card-grd1), var(--card-grd2));
+    z-index: 3;
+    transition: all ease 0.3s;
+}
+
+.card:hover > .shadow {
+    box-shadow: 0px 4px 80px 10px rgba(173,155,255,0.4);
+    z-index: 1;
+    transition: all ease 0.3s;
+}
+
+.backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top, var(--radial-center), var(--radial-edge)), linear-gradient(135deg, var(--card-grd1), var(--card-grd2));
+    z-index: -2;
+    border-radius: 20px;
+    opacity: 10%;
+    transition: all ease 0.3s;
+    pointer-events: none;
+}
+
+.shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0px 0px 0px 0px rgb(173,155,255);
+    transition: all ease 0.3s;
+    pointer-events: none;
 }
 
 figure {
