@@ -19,8 +19,10 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+$on-tiny:        $on-palm/2 !default;
 $on-medium:        $on-palm !default;
 $on-large:         $on-laptop !default;
+$on-xlarge:         $on-laptop*2 !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
