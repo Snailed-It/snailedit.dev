@@ -12,8 +12,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, darken($snail-brand-color, 15%), #000000 80%);
-  min-height: 100vh;
+  background: linear-gradient(to bottom, darken($dm-brand-color, 20%), #000000 80%);
 }
 
 h1 {
@@ -189,10 +188,7 @@ section:not(:last-of-type) {
 .site-header {
     border-top: 0px;
     border-bottom: 0px;
-    background-color: $lm-brand-color;
-    @media (prefers-color-scheme: dark) {
-        background-color: $dm-brand-color !important;
-    }
+    background: linear-gradient(to bottom, $dm-brand-color, darken($dm-brand-color, 19%) 90%, transparent);
     max-height: $nav-bar-height;
     min-height: $nav-bar-height;
 
