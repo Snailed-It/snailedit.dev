@@ -364,6 +364,34 @@ section:not(:last-of-type) {
     box-shadow: 0px 4px 80px 10px rgba(173,155,255,0.4);
     z-index: 1;
     transition: all ease 0.3s;
+
+    &#capsule-shadow {
+        box-shadow: 0px 4px 80px 10px rgba(165, 94, 216, 1);
+    }
+    &#toolbox-pro-shadow {
+        box-shadow: 0px 4px 80px 10px rgb(46, 101, 221);
+    }
+    &#nautomate-shadow {
+        box-shadow: 0px 4px 80px 10px rgba(245, 245, 245, 0.8);
+    }
+    &#logger-shadow {
+        box-shadow: 0px 4px 80px 10px rgba(250, 128, 119, 0.9);
+    }
+    &#menu-box-shadow {
+        box-shadow: 0px 4px 80px 10px rgb(229, 10, 122);
+    }
+    &#focuscuts-shadow {
+        box-shadow: 0px 4px 80px 10px rgb(235, 195, 14);
+    }
+    &#snailedit-social-shadow {
+        box-shadow: 0px 4px 80px 10px rgb(84, 57, 197);
+    }
+    &#pushcut-shadow {
+        box-shadow: 0px 4px 80px 10px rgb(222, 104, 197);
+    }
+    &#work-with-us-shadow {
+        box-shadow: 0px 4px 80px 10px rgb(59, 125, 171);
+    }
 }
 
 .backdrop {
