@@ -64,7 +64,7 @@
                                     {% endif %}
                         </div>
                             </div>
-                        <div class="shadow"></div>
+                        <div class="shadow" id="{{ app.name | replace: ' ', '-' | replace: '.', '-' | downcase }}-shadow"></div>
                         <div class="backdrop"></div>
                     </div>
                 {% endfor %}
