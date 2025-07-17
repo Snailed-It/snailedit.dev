@@ -21,6 +21,7 @@ $on-laptop:        800px !default;
 
 $on-tiny:        $on-palm/2 !default;
 $on-medium:        $on-palm !default;
+$on-medium-large:  $on-laptop - ($on-laptop - $on-palm) !default;
 $on-large:         $on-laptop !default;
 $on-xlarge:         $on-laptop*2 !default;
 
