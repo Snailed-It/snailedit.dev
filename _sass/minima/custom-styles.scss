@@ -209,6 +209,31 @@ section:not(:last-of-type) {
     background: linear-gradient(to bottom, $dm-brand-color, darken($dm-brand-color, 19%) 90%, transparent);
     max-height: $nav-bar-height;
     min-height: $nav-bar-height;
+    display: flex;
+    align-items: center;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .site-nav {
+        margin-left: auto;
+
+        // When any link is hovered, compress all others
+        &:hover .page-link:not(:hover) {
+            padding: 4px 8px;
+        }
+
+        // Remove trigger padding when any page-link is hovered
+        &:hover .trigger {
+            padding-top: 0;
+            padding-bottom: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
 
     .site-title,
     .page-link,
@@ -224,22 +249,77 @@ section:not(:last-of-type) {
         }
     }
 
-    .page-link {
-        clip-path: path("M 0 25 C 0 -5, -5 0, 80 0 S 160 -5, 160 25, 165 50 80 50, 0 55, 0 25");
+    .trigger {
+        //clip-path: path("M 0 25 C 0 -5, -5 0, 80 0 S 160 -5, 160 25, 165 50 80 50, 0 55, 0 25");
+        line-height: 90%;
         border: none;
         border-radius: 13px;
         background-color: var(--primaryBg);
         box-shadow: 0px -3px 15px 0px var(--primaryHi) inset;
         //color: var(--primaryFg);
         transition: all 0.2s ease;
-        padding: 0.5em;
+        padding: 0.3em;
         backdrop-filter: url(#glass-blur);
+    }
+
+    .page-link {
+        position: relative;
+        display: inline-block;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: 2px;
+        border-radius: 20px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        color: inherit;
+        text-decoration: none;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+            @media (prefers-color-scheme: dark) {
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        &:hover {
+            transform: translateY(-1px);
+            padding: 6px 10px;
+
+            &::before {
+                opacity: 1;
+                transform: scale(1);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        &:active {
+            transform: translateY(0);
+
+            &::before {
+                transform: scale(0.95);
+            }
+        }
     }
 
     // Positioning context for the mobile navigation icon
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .card > p {
