@@ -32,7 +32,7 @@
   position: absolute;
   top: 9px;
   right: $spacing-unit / 2;
-  background-color: $background-color;
+  background-color: transparent;
   border: 1px solid $border-color-01;
   border-radius: 5px;
   text-align: right;
@@ -50,7 +50,7 @@
     text-align: center;
 
     > svg path {
-      fill: $border-color-03;
+      fill: white;
     }
   }
 
@@ -83,7 +83,9 @@
     &:not(:last-child) {
       margin-right: 0;
     }
-    margin-left: 20px;
+    @media screen and (min-width: $on-medium) {
+      margin-left: 20px;
+    }
   }
 
   @media screen and (min-width: $on-medium) {
