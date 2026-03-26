@@ -8,7 +8,7 @@ redirect_from:
 
 # Work with us!
 
-Snailed It is a small team of people trying to make great apps, and we would love for you to join us doing so.
+Snailed It is a small team of people trying to make great apps, and we would love for you to join us.
 
 ## Freelance Support and Administrative Assistant
 
@@ -54,5 +54,5 @@ The Important Bits:
 - Successful application will be expected to sign an NDA as part of the contract.
 - While the plan is to hire a single person for this role, for the right people we can potentially have multiple people doing fewer hours
 
-To apply, please send a CV to `jobs@snailedit.dev`.
+To apply, please send us your CV [via email](mailto:{{ site.jobs_email | encode_email }}).
 Applications close April 20th.
