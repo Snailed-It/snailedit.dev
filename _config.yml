@@ -22,6 +22,7 @@ title: Snailed It Development Ltd
 email: hello@snailedit.dev
 press_email: press@snailedit.dev
 jobs_email: jobs@snailedit.dev
+jobs_email_encoded: &#x6A;&#x6F;&#x62;&#x73;&commat;&#x73;&#x6E;&#x61;&#x69;&#x6C;&#x65;&#x64;&#x69;&#x74;&period;&#x64;&#x65;&#x76; # jobs@snailedit.dev
 description: >- # this means to ignore newlines until "baseurl:"
   We make apps.
 baseurl: "/" # the subpath of your site, e.g. /blog

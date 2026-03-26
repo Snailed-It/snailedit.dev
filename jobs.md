@@ -54,5 +54,5 @@ The Important Bits:
 - Successful application will be expected to sign an NDA as part of the contract.
 - While the plan is to hire a single person for this role, for the right people we can potentially have multiple people doing fewer hours
 
-To apply, please send us your CV [via email](mailto:{{ site.jobs_email | encode_email }}).
+To apply, please send your CV to {{ site.jobs_email | encode_email }}.  {{ site.jobs_email_encoded }}
 Applications close April 20th.
