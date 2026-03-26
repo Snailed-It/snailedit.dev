@@ -4,7 +4,6 @@ module Jekyll
 
     def html_encode(input)
       encoded = input.chars.map { |c| '&' + '#' + c.ord.to_s + ';' }.join
-      puts "ENCODED OUTPUT: #{encoded}"   # Debug
       encoded.respond_to?(:html_safe) ? encoded.html_safe : encoded
     end
   end
