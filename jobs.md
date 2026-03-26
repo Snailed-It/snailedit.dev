@@ -1,17 +1,17 @@
 ---
-title: "Jobs"
+title: "Work With Us"
 layout: default
-redirect_from:
 ---
 
 # Work With Us
 
-Snailed It is a small team of people trying to make great apps, and we would love for you to join us.
+Snailed It is a small team of people trying to make great apps and we would love for you to join us.
 
 ## Freelance Support and Administrative Assistant
 
 We are looking for someone to come and help handle our support requests, dealing with tickets from customers as well as users in our Beta Testing Discord.
-We don't get a massive ticket load but are spectacularly inconsisent at keeping on top of it ourselves so need some help.
+You'll be joining a small team with a very flexible work structure in a role with plenty of scope to grow within the company.
+As a freelancer, we expect you to be able to manage your time and workload, but we have no specific requirements for when work is done each week, and understand you will be working around your other commitments.
 
 The Job:
 
@@ -47,10 +47,10 @@ The Important Bits:
 - This is a freelance / contracting position, not PAYE.
 - £16/hour, paid in GBP, USD or EUR within 14 days of receiving a monthly invoice.
 - Fully flexible working hours, based around an average of 8 hours per week.
+- There are no geographical requirements for this role.
 - We can optionally provide devices as needed.
 - We will provide an email address and all accounts and software as needed.
-- Successful application will be expected to sign an NDA as part of the contract.
-- While the plan is to hire a single person for this role, for the right people we can potentially have multiple people doing fewer hours
+- The successful applicant will be expected to sign an NDA as part of the contract.
 
 <p>
   To apply, please send your CV to <a href="mailto:{{ site.jobs_email | encode_email }}">{{ site.jobs_email | html_encode }}</a>.
