@@ -11,13 +11,12 @@ Snailed It is a small team of people trying to make great apps and we would love
 
 We are looking for someone to come and help handle our support requests, dealing with tickets from customers as well as users in our Beta Testing Discord.
 You'll be joining a small team with a very flexible work structure in a role with plenty of scope to grow within the company.
-As a freelancer, we expect you to be able to manage your time and workload, but we have no specific requirements for when work is done each week, and understand you will be working around your other commitments.
 
 The Job:
 
 - Promptly deal with customer support issues and feedback, whether via email tickets, social media (including Discord), or elsewhere.
 - Attempt to reproduce, diagnose and solve any issues, and provide feedback to the user detailing either how to fix the problem or pass bugs onto the development team to be fixed.
-- Where appropriate, improve documentation based on consistent support requests - if we repeatedly get the same question, that should be documented somewhere.
+- Where appropriate, improve documentation based on consistent support requests.
 - Keep the user updated as their issue goes through the support pipeline.
 - Communicate with the company owners are issues arise.
 - Attend semi-regular meetings. These will always be with plenty of notice and can be very flexible on scheduling.
@@ -50,9 +49,9 @@ The Important Bits:
 - There are no geographical requirements for this role.
 - We can optionally provide devices as needed.
 - We will provide an email address and all accounts and software as needed.
-- The successful applicant will be expected to sign an NDA as part of the contract.
+- The successful applicant will be expected to sign an NDA as part of their contract.
 
 <p>
   To apply, please send your CV to <a href="mailto:{{ site.jobs_email | encode_email }}">{{ site.jobs_email | html_encode }}</a>.
-  Applications close April 20th.
+  Applications close April 27th.
 </p>
