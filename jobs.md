@@ -2,11 +2,9 @@
 title: "Jobs"
 layout: default
 redirect_from:
-  - "/hiring"
-  - "/work-with-us"
 ---
 
-# Work with us!
+# Work With Us
 
 Snailed It is a small team of people trying to make great apps, and we would love for you to join us.
 
@@ -54,5 +52,7 @@ The Important Bits:
 - Successful application will be expected to sign an NDA as part of the contract.
 - While the plan is to hire a single person for this role, for the right people we can potentially have multiple people doing fewer hours
 
-To apply, please send your CV to {{ site.jobs_email | encode_email }}.  {{ site.jobs_email_encoded }}
-Applications close April 20th.
+<p>
+  To apply, please send your CV to <a href="mailto:{{ site.jobs_email | encode_email }}">{{ site.jobs_email | html_encode }}</a>.
+  Applications close April 20th.
+</p>
