@@ -5,7 +5,7 @@ layout: default
 
 # Work With Us
 
-Snailed It is a small team of people trying to make great apps and we would love for you to join us.
+Snailed It is a small team trying to make great apps and we would love for you to join us.
 
 ## Freelance Support and Administrative Assistant
 
