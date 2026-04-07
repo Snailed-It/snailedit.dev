@@ -17,8 +17,8 @@ The Job:
 - Promptly deal with customer support issues and feedback, whether via email tickets, social media (including Discord), or elsewhere.
 - Attempt to reproduce, diagnose and solve any issues, and provide feedback to the user detailing either how to fix the problem or pass bugs onto the development team to be fixed.
 - Where appropriate, improve documentation based on consistent support requests.
-- Keep the user updated as their issue goes through the support pipeline.
-- Communicate with the company owners are issues arise.
+- Keep users updated as their issues goes through the support pipeline.
+- Communicate with the company owners as issues arise.
 - Attend semi-regular meetings. These will always be with plenty of notice and can be very flexible on scheduling.
 - Provide additional administrative assistance where needed.
 - Provide testing and feedback of our apps, including specific features when requested.
@@ -44,7 +44,7 @@ The Nice To Haves:
 The Important Bits:
 
 - This is a freelance / contracting position, not PAYE.
-- £16/hour, paid in GBP, USD or EUR within 14 days of receiving a monthly invoice.
+- £167/hour, paid in GBP, USD or EUR within 14 days of receiving a monthly invoice.
 - Fully flexible working hours, based around an average of 8 hours per week.
 - There are no geographical requirements for this role.
 - We can optionally provide devices as needed.
@@ -53,5 +53,5 @@ The Important Bits:
 
 <p>
   To apply, please send your CV to <a href="mailto:{{ site.jobs_email | encode_email }}">{{ site.jobs_email | html_encode }}</a>.
-  Applications close April 27th.
+  Applications close 1st May.
 </p>
