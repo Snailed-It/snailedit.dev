@@ -44,7 +44,7 @@ The Nice To Haves:
 The Important Bits:
 
 - This is a freelance / contracting position, not PAYE.
-- £167/hour, paid in GBP, USD or EUR within 14 days of receiving a monthly invoice.
+- £17/hour, paid in GBP, USD or EUR within 14 days of receiving a monthly invoice.
 - Fully flexible working hours, based around an average of 8 hours per week.
 - There are no geographical requirements for this role.
 - We can optionally provide devices as needed.
