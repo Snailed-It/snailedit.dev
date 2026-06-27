@@ -1,6 +1,6 @@
 ---
 title: 'Toolbox Pro, Logger for Shortcuts, and Nautomate'
-type: post
+layout: post
 published: true
 date: 2023-08-25 15:00
 redirect_from:
