@@ -1,6 +1,6 @@
 ---
 title: 'Announcing Menu Box'
-type: post
+layout: post
 published: true
 date: 2024-09-06 18:20
 ---
