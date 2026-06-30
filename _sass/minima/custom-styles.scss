@@ -221,17 +221,6 @@ section:not(:last-of-type) {
     .site-nav {
         margin-left: auto;
 
-        // When any link is hovered, compress all others
-        &:hover .page-link:not(:hover) {
-            padding: 4px 8px;
-        }
-
-        // Remove trigger padding when any page-link is hovered
-        &:hover .trigger {
-            padding-top: 0;
-            padding-bottom: 0;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
     }
 
     .site-title,
@@ -260,6 +249,17 @@ section:not(:last-of-type) {
             transition: all 0.2s ease;
             padding: 0.3em;
             backdrop-filter: url(#glass-blur);
+            // Grow from the right edge so the bar expands inward, away from
+            // the page content (the nav is right-aligned). transform: scale()
+            // is composited, so the whole bar grows without reflowing.
+            transform-origin: right center;
+        }
+
+        // The whole glass bar grows slightly only when a link pill is
+        // actually hovered — not just when the cursor is anywhere over the
+        // nav (e.g. the gaps between pills or the bar's own padding).
+        .trigger:has(.page-link:hover) {
+            transform: scale(1.04);
         }
 
         .page-link {
@@ -276,10 +276,15 @@ section:not(:last-of-type) {
             &::before {
                 content: '';
                 position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
+                // Extend the highlight beyond the link's box so it fills the
+                // full height of the nav bar and reads as a wider pill (Apple
+                // "liquid glass" look). Negative insets only grow the
+                // pseudo-element visually — they don't affect layout, so the
+                // row never reflows.
+                top: -0.3em;
+                left: -8px;
+                right: -8px;
+                bottom: -0.3em;
                 background: rgba(255, 255, 255, 0.15);
                 border-radius: 20px;
                 backdrop-filter: blur(20px);
@@ -297,7 +302,6 @@ section:not(:last-of-type) {
 
             &:hover {
                 transform: translateY(-1px);
-                padding: 6px 10px;
 
                 &::before {
                     opacity: 1;
